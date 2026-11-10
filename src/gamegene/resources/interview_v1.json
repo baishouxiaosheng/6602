@@ -1,0 +1,441 @@
+{
+ "version": "interview-v1",
+ "questions": [
+  {
+   "id": "q01_failure",
+   "kind": "gene",
+   "prompt_zh": "同一个地方连续失败五次，你会？",
+   "prompt_en": "You fail the same spot five times. You…",
+   "options": [
+    {
+     "id": "a",
+     "label_zh": "再来，直到练会为止",
+     "label_en": "retry until I master it",
+     "gene_deltas": {
+      "challenge": 1.5,
+      "pace": 0.5
+     }
+    },
+    {
+     "id": "b",
+     "label_zh": "停下来换个思路或打法",
+     "label_en": "stop and rethink my approach",
+     "gene_deltas": {
+      "strategy": 1.0
+     }
+    },
+    {
+     "id": "c",
+     "label_zh": "希望游戏别这样卡我",
+     "label_en": "wish the game would not block me",
+     "gene_deltas": {
+      "challenge": -1.5
+     }
+    }
+   ]
+  },
+  {
+   "id": "q02_evening",
+   "kind": "gene",
+   "prompt_zh": "理想的一晚游戏时间更像？",
+   "prompt_en": "Your ideal evening of play is…",
+   "options": [
+    {
+     "id": "a",
+     "label_zh": "慢慢推演一个长远的大计划",
+     "label_en": "slowly working out a long plan",
+     "gene_deltas": {
+      "strategy": 1.5,
+      "pace": -1.0
+     }
+    },
+    {
+     "id": "b",
+     "label_zh": "手心出汗、节奏紧凑的连续战斗",
+     "label_en": "sweaty, fast, back-to-back fights",
+     "gene_deltas": {
+      "pace": 1.5
+     }
+    },
+    {
+     "id": "c",
+     "label_zh": "不赶时间，四处走走看看",
+     "label_en": "unhurried wandering",
+     "gene_deltas": {
+      "pace": -1.5,
+      "immersion": 0.5,
+      "exploration": 0.5
+     }
+    }
+   ]
+  },
+  {
+   "id": "q03_satisfaction",
+   "kind": "gene",
+   "prompt_zh": "哪一刻最让你满足？",
+   "prompt_en": "Which moment satisfies you most?",
+   "options": [
+    {
+     "id": "a",
+     "label_zh": "角色或装备终于成型，数值碾压",
+     "label_en": "my build finally comes together",
+     "gene_deltas": {
+      "progression": 1.5
+     }
+    },
+    {
+     "id": "b",
+     "label_zh": "发现一个没人提示过的隐藏区域",
+     "label_en": "finding a hidden area nobody pointed to",
+     "gene_deltas": {
+      "exploration": 1.5
+     }
+    },
+    {
+     "id": "c",
+     "label_zh": "自己搭的东西运转起来了",
+     "label_en": "something I built starts working",
+     "gene_deltas": {
+      "creation": 1.5
+     }
+    }
+   ]
+  },
+  {
+   "id": "q04_story",
+   "kind": "gene",
+   "prompt_zh": "你怎么看游戏里的剧情？",
+   "prompt_en": "How do you feel about story in games?",
+   "options": [
+    {
+     "id": "a",
+     "label_zh": "我就是为了故事和角色来的",
+     "label_en": "story and characters are why I play",
+     "gene_deltas": {
+      "narrative": 2.0
+     }
+    },
+    {
+     "id": "b",
+     "label_zh": "有点背景交代就够了",
+     "label_en": "a bit of context is enough",
+     "gene_deltas": {}
+    },
+    {
+     "id": "c",
+     "label_zh": "最好别打断我玩",
+     "label_en": "please do not interrupt my play",
+     "gene_deltas": {
+      "narrative": -1.5
+     }
+    }
+   ]
+  },
+  {
+   "id": "q05_people",
+   "kind": "gene",
+   "prompt_zh": "你更喜欢和谁一起玩？",
+   "prompt_en": "Who do you prefer to play with?",
+   "options": [
+    {
+     "id": "a",
+     "label_zh": "一个人",
+     "label_en": "alone",
+     "gene_deltas": {
+      "social": -2.0
+     }
+    },
+    {
+     "id": "b",
+     "label_zh": "和朋友合作",
+     "label_en": "co-operating with friends",
+     "gene_deltas": {
+      "social": 1.5
+     }
+    },
+    {
+     "id": "c",
+     "label_zh": "和别人一较高下",
+     "label_en": "competing against others",
+     "gene_deltas": {
+      "social": 2.0,
+      "challenge": 0.5
+     }
+    }
+   ]
+  },
+  {
+   "id": "q06_world",
+   "kind": "gene",
+   "prompt_zh": "氛围、美术和音乐对你有多重要？",
+   "prompt_en": "How much do atmosphere, art and music matter?",
+   "options": [
+    {
+     "id": "a",
+     "label_zh": "最重要，我想沉进那个世界",
+     "label_en": "most of all; I want to sink into the world",
+     "gene_deltas": {
+      "immersion": 2.0
+     }
+    },
+    {
+     "id": "b",
+     "label_zh": "有当然好，但不是重点",
+     "label_en": "nice to have, not the point",
+     "gene_deltas": {
+      "immersion": 0.5
+     }
+    },
+    {
+     "id": "c",
+     "label_zh": "玩法好就行，画面无所谓",
+     "label_en": "mechanics are all I need",
+     "gene_deltas": {
+      "immersion": -1.0
+     }
+    }
+   ]
+  },
+  {
+   "id": "q07_question_mark",
+   "kind": "gene",
+   "prompt_zh": "地图边缘有个没标记的山洞，你会？",
+   "prompt_en": "There is an unmarked cave at the map edge. You…",
+   "options": [
+    {
+     "id": "a",
+     "label_zh": "马上去，主线可以等",
+     "label_en": "go now; the main quest can wait",
+     "gene_deltas": {
+      "exploration": 1.5
+     }
+    },
+    {
+     "id": "b",
+     "label_zh": "顺路的话看一眼",
+     "label_en": "look if it is on my way",
+     "gene_deltas": {}
+    },
+    {
+     "id": "c",
+     "label_zh": "告诉我主线往哪走就行",
+     "label_en": "just tell me where the main path is",
+     "gene_deltas": {
+      "exploration": -1.5
+     }
+    }
+   ]
+  },
+  {
+   "id": "q08_freedom",
+   "kind": "gene",
+   "prompt_zh": "你想要多少自由度？",
+   "prompt_en": "How much freedom do you want?",
+   "options": [
+    {
+     "id": "a",
+     "label_zh": "给我工具，我自己造",
+     "label_en": "give me tools and let me build",
+     "gene_deltas": {
+      "creation": 2.0
+     }
+    },
+    {
+     "id": "b",
+     "label_zh": "能搭配自己的流派和配装就好",
+     "label_en": "enough to craft my own build",
+     "gene_deltas": {
+      "creation": 0.5,
+      "progression": 0.5,
+      "strategy": 0.5
+     }
+    },
+    {
+     "id": "c",
+     "label_zh": "我想要设计师打磨好的体验",
+     "label_en": "I want a crafted, authored experience",
+     "gene_deltas": {
+      "creation": -1.5
+     }
+    }
+   ]
+  },
+  {
+   "id": "q09_long_term",
+   "kind": "gene",
+   "prompt_zh": "什么让你长期玩下去？",
+   "prompt_en": "What keeps you playing for months?",
+   "options": [
+    {
+     "id": "a",
+     "label_zh": "解锁、收集、全成就",
+     "label_en": "unlocks, collections, completion",
+     "gene_deltas": {
+      "progression": 1.5
+     }
+    },
+    {
+     "id": "b",
+     "label_zh": "我自己的技术在变强",
+     "label_en": "my own skill getting better",
+     "gene_deltas": {
+      "challenge": 1.0,
+      "progression": -0.5
+     }
+    },
+    {
+     "id": "c",
+     "label_zh": "每局从头开始也没关系，好玩就行",
+     "label_en": "starting fresh each time is fine",
+     "gene_deltas": {
+      "progression": -1.5
+     }
+    }
+   ]
+  },
+  {
+   "id": "q10_problem",
+   "kind": "gene",
+   "prompt_zh": "你更享受哪种难题？",
+   "prompt_en": "Which kind of problem do you enjoy?",
+   "options": [
+    {
+     "id": "a",
+     "label_zh": "多个系统之间的权衡与优化",
+     "label_en": "trade-offs across many systems",
+     "gene_deltas": {
+      "strategy": 1.5
+     }
+    },
+    {
+     "id": "b",
+     "label_zh": "考验反应和手感的",
+     "label_en": "reflexes and feel",
+     "gene_deltas": {
+      "pace": 1.0,
+      "challenge": 0.5,
+      "strategy": -1.0
+     }
+    },
+    {
+     "id": "c",
+     "label_zh": "轻松一点，别太费脑",
+     "label_en": "something light",
+     "gene_deltas": {
+      "strategy": -1.5,
+      "challenge": -0.5
+     }
+    }
+   ]
+  },
+  {
+   "id": "q11_familiar",
+   "kind": "tags",
+   "min_choices": 1,
+   "max_choices": 4,
+   "prompt_zh": "你平时最常玩哪几类游戏？（选 1–4 项，用来区分“同类轨”和“其他轨”）",
+   "prompt_en": "Which kinds of games do you play most? (pick 1-4; separates same-track from cross-track)",
+   "options": [
+    {
+     "id": "roguelike",
+     "label_zh": "肉鸽 / 动作肉鸽",
+     "label_en": "Roguelike / action roguelike",
+     "tags": [
+      "roguelike",
+      "action roguelike",
+      "roguelite",
+      "hack and slash"
+     ]
+    },
+    {
+     "id": "strategy",
+     "label_zh": "策略 / 战棋 / 卡牌",
+     "label_en": "Strategy / tactics / card",
+     "tags": [
+      "strategy",
+      "turn-based strategy",
+      "turn-based tactics",
+      "4x",
+      "card game",
+      "deckbuilding",
+      "roguelike deckbuilder"
+     ]
+    },
+    {
+     "id": "rpg",
+     "label_zh": "角色扮演",
+     "label_en": "RPG",
+     "tags": [
+      "rpg",
+      "crpg",
+      "jrpg",
+      "action rpg"
+     ]
+    },
+    {
+     "id": "sim",
+     "label_zh": "模拟 / 建造 / 经营",
+     "label_en": "Simulation / building / management",
+     "tags": [
+      "simulation",
+      "base building",
+      "management",
+      "automation",
+      "colony sim",
+      "farming sim",
+      "life sim"
+     ]
+    },
+    {
+     "id": "platformer",
+     "label_zh": "平台跳跃 / 银河城",
+     "label_en": "Platformer / metroidvania",
+     "tags": [
+      "platformer",
+      "metroidvania",
+      "precision platformer",
+      "souls-like"
+     ]
+    },
+    {
+     "id": "story",
+     "label_zh": "剧情 / 冒险 / 解谜",
+     "label_en": "Story / adventure / puzzle",
+     "tags": [
+      "story rich",
+      "adventure",
+      "puzzle",
+      "visual novel",
+      "choices matter",
+      "mystery"
+     ]
+    },
+    {
+     "id": "survival",
+     "label_zh": "生存 / 沙盒 / 开放世界",
+     "label_en": "Survival / sandbox / open world",
+     "tags": [
+      "survival",
+      "sandbox",
+      "crafting",
+      "open world",
+      "open world survival craft",
+      "exploration"
+     ]
+    },
+    {
+     "id": "shooter",
+     "label_zh": "射击 / 多人合作",
+     "label_en": "Shooter / co-op",
+     "tags": [
+      "fps",
+      "shooter",
+      "co-op",
+      "multiplayer",
+      "action"
+     ]
+    }
+   ]
+  }
+ ]
+}

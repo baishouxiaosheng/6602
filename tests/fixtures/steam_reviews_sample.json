@@ -1,0 +1,15 @@
+{
+  "_note": "Hand-made sample in the SHAPE of one appreviews page; not real reviews.",
+  "success": 1,
+  "query_summary": {"num_reviews": 3, "review_score_desc": "Very Positive", "total_positive": 900, "total_negative": 100, "total_reviews": 1000},
+  "cursor": "AoJ4sample==",
+  "reviews": [
+    {"recommendationid": "1001", "language": "english", "voted_up": true, "votes_up": 50,
+     "review": "The combat is brutally hard and every mistake gets punished, but learning the patterns feels amazing after dozens of deaths.",
+     "author": {"playtime_forever": 6000}},
+    {"recommendationid": "1002", "language": "english", "voted_up": true, "votes_up": 20,
+     "review": "Planning your deck three floors ahead is the whole game; the combat is brutally hard and every mistake gets punished.",
+     "author": {"playtime_forever": 1200}},
+    {"recommendationid": "1003", "language": "english", "voted_up": false, "votes_up": 1, "review": "meh", "author": {"playtime_forever": 30}}
+  ]
+}

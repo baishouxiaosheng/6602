@@ -1,0 +1,11 @@
+# Fill in GitHub usernames, then remove the leading "# " of each rule.
+# /src/gamegene/contracts/   @designer
+# /src/gamegene/storage/     @designer
+# /src/gamegene/llm/         @designer
+# /src/gamegene/app/         @designer
+# /tests/                    @designer
+# /docs/                     @designer
+# /src/gamegene/steam/       @dev-a
+# /src/gamegene/catalog/     @dev-a
+# /src/gamegene/profile/     @dev-b
+# /src/gamegene/recommend/   @dev-b

@@ -1,0 +1,18 @@
+{
+  "_note": "Hand-made sample in the SHAPE of store appdetails `data`; values are illustrative, not a real snapshot.",
+  "type": "game",
+  "name": "Sample Quest",
+  "steam_appid": 424242,
+  "is_free": false,
+  "short_description": "A sample roguelike about testing.",
+  "detailed_description": "<h2>About</h2><p>Every run is different. You will die a lot, and that is the point.</p><p>Build a deck of over 200 cards &amp; relics.</p><br>A strictly single-player experience.",
+  "supported_languages": "English<strong>*</strong>, Simplified Chinese, Japanese<br><strong>*</strong>languages with full audio support",
+  "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/424242/header.jpg",
+  "developers": ["Sample Studio"],
+  "price_overview": {"currency": "USD", "initial": 1999, "final": 1499, "discount_percent": 25, "final_formatted": "$14.99"},
+  "platforms": {"windows": true, "mac": false, "linux": true},
+  "categories": [{"id": 2, "description": "Single-player"}, {"id": 38, "description": "Online Co-op"}, {"id": 49, "description": "PvP"}],
+  "genres": [{"id": "23", "description": "Indie"}, {"id": "2", "description": "Strategy"}],
+  "release_date": {"coming_soon": false, "date": "Jan 23, 2019"},
+  "recommendations": {"total": 12345}
+}

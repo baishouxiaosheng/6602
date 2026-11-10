@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+.venv/
+.env
+.pytest_cache/
+.ruff_cache/
+dist/
+*.egg-info/
+# runtime data (never commit user profiles or raw caches)
+data/store/
+data/raw/
+evidence/*
+!evidence/README.md
+.gradio/
+handoff_packages/

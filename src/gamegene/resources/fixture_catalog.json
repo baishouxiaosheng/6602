@@ -1,0 +1,3439 @@
+{
+ "note": "SYNTHETIC development data, not real evidence",
+ "games": [
+  {
+   "appid": 1145360,
+   "name": "Hades",
+   "status": "verified",
+   "review_note": null,
+   "store": {
+    "short_description": "[synthetic fixture] placeholder description of Hades.",
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/1145360/header.jpg",
+    "store_url": "https://store.steampowered.com/app/1145360/",
+    "genres": [
+     "action",
+     "indie",
+     "rpg"
+    ],
+    "tags": [
+     "action roguelike",
+     "roguelike",
+     "hack and slash",
+     "story rich",
+     "great soundtrack"
+    ],
+    "platforms": [
+     "windows",
+     "mac"
+    ],
+    "social_modes": [
+     "single"
+    ],
+    "languages": [
+     "english",
+     "simplified chinese"
+    ],
+    "is_free": false,
+    "price": {
+     "currency": "USD",
+     "final_cents": 2499,
+     "initial_cents": 2499,
+     "discount_percent": 0,
+     "fetched_at": "2026-11-10T00:00:00Z"
+    },
+    "review_score_desc": null,
+    "total_reviews": null,
+    "fetched_at": "2026-11-10T00:00:00Z"
+   },
+   "genes": {
+    "challenge": {
+     "level": 3,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-challenge-1"
+     ]
+    },
+    "strategy": {
+     "level": 2,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-strategy-1"
+     ]
+    },
+    "pace": {
+     "level": 4,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-pace-1"
+     ]
+    },
+    "progression": {
+     "level": 3,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-progression-1"
+     ]
+    },
+    "exploration": {
+     "level": 1,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-exploration-1"
+     ]
+    },
+    "creation": {
+     "level": 1,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-creation-1"
+     ]
+    },
+    "narrative": {
+     "level": 3,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-narrative-1"
+     ]
+    },
+    "immersion": {
+     "level": 3,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-immersion-1"
+     ]
+    },
+    "social": {
+     "level": 0,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-social-1"
+     ]
+    }
+   },
+   "evidence": [
+    {
+     "evidence_id": "ev-challenge-1",
+     "gene": "challenge",
+     "quote": "[synthetic fixture] Hades: execution challenge is at level 3 of 4.",
+     "source_type": "store_review",
+     "source_ref": "fixture://1145360/challenge",
+     "grade": "C",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    },
+    {
+     "evidence_id": "ev-strategy-1",
+     "gene": "strategy",
+     "quote": "[synthetic fixture] Hades: strategic depth is at level 2 of 4.",
+     "source_type": "store_description",
+     "source_ref": "fixture://1145360/strategy",
+     "grade": "A",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    },
+    {
+     "evidence_id": "ev-pace-1",
+     "gene": "pace",
+     "quote": "[synthetic fixture] Hades: pace and intensity is at level 4 of 4.",
+     "source_type": "wiki",
+     "source_ref": "fixture://1145360/pace",
+     "grade": "B",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    },
+    {
+     "evidence_id": "ev-progression-1",
+     "gene": "progression",
+     "quote": "[synthetic fixture] Hades: progression and accumulation is at level 3 of 4.",
+     "source_type": "store_review",
+     "source_ref": "fixture://1145360/progression",
+     "grade": "C",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    },
+    {
+     "evidence_id": "ev-exploration-1",
+     "gene": "exploration",
+     "quote": "[synthetic fixture] Hades: exploration and discovery is at level 1 of 4.",
+     "source_type": "store_description",
+     "source_ref": "fixture://1145360/exploration",
+     "grade": "A",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    },
+    {
+     "evidence_id": "ev-creation-1",
+     "gene": "creation",
+     "quote": "[synthetic fixture] Hades: creation and expression is at level 1 of 4.",
+     "source_type": "wiki",
+     "source_ref": "fixture://1145360/creation",
+     "grade": "B",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    },
+    {
+     "evidence_id": "ev-narrative-1",
+     "gene": "narrative",
+     "quote": "[synthetic fixture] Hades: narrative is at level 3 of 4.",
+     "source_type": "store_review",
+     "source_ref": "fixture://1145360/narrative",
+     "grade": "C",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    },
+    {
+     "evidence_id": "ev-immersion-1",
+     "gene": "immersion",
+     "quote": "[synthetic fixture] Hades: world and atmosphere is at level 3 of 4.",
+     "source_type": "store_description",
+     "source_ref": "fixture://1145360/immersion",
+     "grade": "A",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    },
+    {
+     "evidence_id": "ev-social-1",
+     "gene": "social",
+     "quote": "[synthetic fixture] Hades: social dependence is at level 0 of 4.",
+     "source_type": "wiki",
+     "source_ref": "fixture://1145360/social",
+     "grade": "B",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    }
+   ],
+   "annotation": {
+    "provider": "fixture",
+    "model": "hand-written",
+    "prompt_version": "fixture",
+    "annotated_at": "2026-11-10T00:00:00Z"
+   }
+  },
+  {
+   "appid": 646570,
+   "name": "Slay the Spire",
+   "status": "verified",
+   "review_note": null,
+   "store": {
+    "short_description": "[synthetic fixture] placeholder description of Slay the Spire.",
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/646570/header.jpg",
+    "store_url": "https://store.steampowered.com/app/646570/",
+    "genres": [
+     "indie",
+     "strategy"
+    ],
+    "tags": [
+     "roguelike deckbuilder",
+     "card game",
+     "turn-based",
+     "roguelike",
+     "deckbuilding"
+    ],
+    "platforms": [
+     "windows",
+     "mac",
+     "linux"
+    ],
+    "social_modes": [
+     "single"
+    ],
+    "languages": [
+     "english",
+     "simplified chinese"
+    ],
+    "is_free": false,
+    "price": {
+     "currency": "USD",
+     "final_cents": 2499,
+     "initial_cents": 2499,
+     "discount_percent": 0,
+     "fetched_at": "2026-11-10T00:00:00Z"
+    },
+    "review_score_desc": null,
+    "total_reviews": null,
+    "fetched_at": "2026-11-10T00:00:00Z"
+   },
+   "genes": {
+    "challenge": {
+     "level": 3,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-challenge-1"
+     ]
+    },
+    "strategy": {
+     "level": 4,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-strategy-1"
+     ]
+    },
+    "pace": {
+     "level": 0,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-pace-1"
+     ]
+    },
+    "progression": {
+     "level": 3,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-progression-1"
+     ]
+    },
+    "exploration": {
+     "level": 1,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-exploration-1"
+     ]
+    },
+    "creation": {
+     "level": 1,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-creation-1"
+     ]
+    },
+    "narrative": {
+     "level": 0,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-narrative-1"
+     ]
+    },
+    "immersion": {
+     "level": 1,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-immersion-1"
+     ]
+    },
+    "social": {
+     "level": 0,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-social-1"
+     ]
+    }
+   },
+   "evidence": [
+    {
+     "evidence_id": "ev-challenge-1",
+     "gene": "challenge",
+     "quote": "[synthetic fixture] Slay the Spire: execution challenge is at level 3 of 4.",
+     "source_type": "wiki",
+     "source_ref": "fixture://646570/challenge",
+     "grade": "B",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    },
+    {
+     "evidence_id": "ev-strategy-1",
+     "gene": "strategy",
+     "quote": "[synthetic fixture] Slay the Spire: strategic depth is at level 4 of 4.",
+     "source_type": "store_review",
+     "source_ref": "fixture://646570/strategy",
+     "grade": "C",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    },
+    {
+     "evidence_id": "ev-pace-1",
+     "gene": "pace",
+     "quote": "[synthetic fixture] Slay the Spire: pace and intensity is at level 0 of 4.",
+     "source_type": "store_description",
+     "source_ref": "fixture://646570/pace",
+     "grade": "A",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    },
+    {
+     "evidence_id": "ev-progression-1",
+     "gene": "progression",
+     "quote": "[synthetic fixture] Slay the Spire: progression and accumulation is at level 3 of 4.",
+     "source_type": "wiki",
+     "source_ref": "fixture://646570/progression",
+     "grade": "B",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    },
+    {
+     "evidence_id": "ev-exploration-1",
+     "gene": "exploration",
+     "quote": "[synthetic fixture] Slay the Spire: exploration and discovery is at level 1 of 4.",
+     "source_type": "store_review",
+     "source_ref": "fixture://646570/exploration",
+     "grade": "C",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    },
+    {
+     "evidence_id": "ev-creation-1",
+     "gene": "creation",
+     "quote": "[synthetic fixture] Slay the Spire: creation and expression is at level 1 of 4.",
+     "source_type": "store_description",
+     "source_ref": "fixture://646570/creation",
+     "grade": "A",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    },
+    {
+     "evidence_id": "ev-narrative-1",
+     "gene": "narrative",
+     "quote": "[synthetic fixture] Slay the Spire: narrative is at level 0 of 4.",
+     "source_type": "wiki",
+     "source_ref": "fixture://646570/narrative",
+     "grade": "B",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    },
+    {
+     "evidence_id": "ev-immersion-1",
+     "gene": "immersion",
+     "quote": "[synthetic fixture] Slay the Spire: world and atmosphere is at level 1 of 4.",
+     "source_type": "store_review",
+     "source_ref": "fixture://646570/immersion",
+     "grade": "C",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    },
+    {
+     "evidence_id": "ev-social-1",
+     "gene": "social",
+     "quote": "[synthetic fixture] Slay the Spire: social dependence is at level 0 of 4.",
+     "source_type": "store_description",
+     "source_ref": "fixture://646570/social",
+     "grade": "A",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    }
+   ],
+   "annotation": {
+    "provider": "fixture",
+    "model": "hand-written",
+    "prompt_version": "fixture",
+    "annotated_at": "2026-11-10T00:00:00Z"
+   }
+  },
+  {
+   "appid": 413150,
+   "name": "Stardew Valley",
+   "status": "verified",
+   "review_note": null,
+   "store": {
+    "short_description": "[synthetic fixture] placeholder description of Stardew Valley.",
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/413150/header.jpg",
+    "store_url": "https://store.steampowered.com/app/413150/",
+    "genres": [
+     "indie",
+     "rpg",
+     "simulation"
+    ],
+    "tags": [
+     "farming sim",
+     "life sim",
+     "pixel graphics",
+     "relaxing",
+     "multiplayer"
+    ],
+    "platforms": [
+     "windows",
+     "mac",
+     "linux"
+    ],
+    "social_modes": [
+     "single",
+     "coop"
+    ],
+    "languages": [
+     "english",
+     "simplified chinese"
+    ],
+    "is_free": false,
+    "price": {
+     "currency": "USD",
+     "final_cents": 1499,
+     "initial_cents": 1499,
+     "discount_percent": 0,
+     "fetched_at": "2026-11-10T00:00:00Z"
+    },
+    "review_score_desc": null,
+    "total_reviews": null,
+    "fetched_at": "2026-11-10T00:00:00Z"
+   },
+   "genes": {
+    "challenge": {
+     "level": 1,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-challenge-1"
+     ]
+    },
+    "strategy": {
+     "level": 2,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-strategy-1"
+     ]
+    },
+    "pace": {
+     "level": 1,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-pace-1"
+     ]
+    },
+    "progression": {
+     "level": 3,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-progression-1"
+     ]
+    },
+    "exploration": {
+     "level": 2,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-exploration-1"
+     ]
+    },
+    "creation": {
+     "level": 3,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-creation-1"
+     ]
+    },
+    "narrative": {
+     "level": 2,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-narrative-1"
+     ]
+    },
+    "immersion": {
+     "level": 3,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-immersion-1"
+     ]
+    },
+    "social": {
+     "level": 2,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-social-1"
+     ]
+    }
+   },
+   "evidence": [
+    {
+     "evidence_id": "ev-challenge-1",
+     "gene": "challenge",
+     "quote": "[synthetic fixture] Stardew Valley: execution challenge is at level 1 of 4.",
+     "source_type": "store_review",
+     "source_ref": "fixture://413150/challenge",
+     "grade": "C",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    },
+    {
+     "evidence_id": "ev-strategy-1",
+     "gene": "strategy",
+     "quote": "[synthetic fixture] Stardew Valley: strategic depth is at level 2 of 4.",
+     "source_type": "store_description",
+     "source_ref": "fixture://413150/strategy",
+     "grade": "A",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    },
+    {
+     "evidence_id": "ev-pace-1",
+     "gene": "pace",
+     "quote": "[synthetic fixture] Stardew Valley: pace and intensity is at level 1 of 4.",
+     "source_type": "wiki",
+     "source_ref": "fixture://413150/pace",
+     "grade": "B",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    },
+    {
+     "evidence_id": "ev-progression-1",
+     "gene": "progression",
+     "quote": "[synthetic fixture] Stardew Valley: progression and accumulation is at level 3 of 4.",
+     "source_type": "store_review",
+     "source_ref": "fixture://413150/progression",
+     "grade": "C",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    },
+    {
+     "evidence_id": "ev-exploration-1",
+     "gene": "exploration",
+     "quote": "[synthetic fixture] Stardew Valley: exploration and discovery is at level 2 of 4.",
+     "source_type": "store_description",
+     "source_ref": "fixture://413150/exploration",
+     "grade": "A",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    },
+    {
+     "evidence_id": "ev-creation-1",
+     "gene": "creation",
+     "quote": "[synthetic fixture] Stardew Valley: creation and expression is at level 3 of 4.",
+     "source_type": "wiki",
+     "source_ref": "fixture://413150/creation",
+     "grade": "B",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    },
+    {
+     "evidence_id": "ev-narrative-1",
+     "gene": "narrative",
+     "quote": "[synthetic fixture] Stardew Valley: narrative is at level 2 of 4.",
+     "source_type": "store_review",
+     "source_ref": "fixture://413150/narrative",
+     "grade": "C",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    },
+    {
+     "evidence_id": "ev-immersion-1",
+     "gene": "immersion",
+     "quote": "[synthetic fixture] Stardew Valley: world and atmosphere is at level 3 of 4.",
+     "source_type": "store_description",
+     "source_ref": "fixture://413150/immersion",
+     "grade": "A",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    },
+    {
+     "evidence_id": "ev-social-1",
+     "gene": "social",
+     "quote": "[synthetic fixture] Stardew Valley: social dependence is at level 2 of 4.",
+     "source_type": "wiki",
+     "source_ref": "fixture://413150/social",
+     "grade": "B",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    }
+   ],
+   "annotation": {
+    "provider": "fixture",
+    "model": "hand-written",
+    "prompt_version": "fixture",
+    "annotated_at": "2026-11-10T00:00:00Z"
+   }
+  },
+  {
+   "appid": 427520,
+   "name": "Factorio",
+   "status": "verified",
+   "review_note": null,
+   "store": {
+    "short_description": "[synthetic fixture] placeholder description of Factorio.",
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/427520/header.jpg",
+    "store_url": "https://store.steampowered.com/app/427520/",
+    "genres": [
+     "casual",
+     "indie",
+     "simulation",
+     "strategy"
+    ],
+    "tags": [
+     "automation",
+     "base building",
+     "resource management",
+     "sandbox",
+     "crafting"
+    ],
+    "platforms": [
+     "windows",
+     "mac",
+     "linux"
+    ],
+    "social_modes": [
+     "single",
+     "coop"
+    ],
+    "languages": [
+     "english",
+     "simplified chinese"
+    ],
+    "is_free": false,
+    "price": {
+     "currency": "USD",
+     "final_cents": 3500,
+     "initial_cents": 3500,
+     "discount_percent": 0,
+     "fetched_at": "2026-11-10T00:00:00Z"
+    },
+    "review_score_desc": null,
+    "total_reviews": null,
+    "fetched_at": "2026-11-10T00:00:00Z"
+   },
+   "genes": {
+    "challenge": {
+     "level": 2,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-challenge-1"
+     ]
+    },
+    "strategy": {
+     "level": 4,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-strategy-1"
+     ]
+    },
+    "pace": {
+     "level": 2,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-pace-1"
+     ]
+    },
+    "progression": {
+     "level": 3,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-progression-1"
+     ]
+    },
+    "exploration": {
+     "level": 1,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-exploration-1"
+     ]
+    },
+    "creation": {
+     "level": 4,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-creation-1"
+     ]
+    },
+    "narrative": {
+     "level": 0,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-narrative-1"
+     ]
+    },
+    "immersion": {
+     "level": 1,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-immersion-1"
+     ]
+    },
+    "social": {
+     "level": 2,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-social-1"
+     ]
+    }
+   },
+   "evidence": [
+    {
+     "evidence_id": "ev-challenge-1",
+     "gene": "challenge",
+     "quote": "[synthetic fixture] Factorio: execution challenge is at level 2 of 4.",
+     "source_type": "store_review",
+     "source_ref": "fixture://427520/challenge",
+     "grade": "C",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    },
+    {
+     "evidence_id": "ev-strategy-1",
+     "gene": "strategy",
+     "quote": "[synthetic fixture] Factorio: strategic depth is at level 4 of 4.",
+     "source_type": "store_description",
+     "source_ref": "fixture://427520/strategy",
+     "grade": "A",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    },
+    {
+     "evidence_id": "ev-pace-1",
+     "gene": "pace",
+     "quote": "[synthetic fixture] Factorio: pace and intensity is at level 2 of 4.",
+     "source_type": "wiki",
+     "source_ref": "fixture://427520/pace",
+     "grade": "B",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    },
+    {
+     "evidence_id": "ev-progression-1",
+     "gene": "progression",
+     "quote": "[synthetic fixture] Factorio: progression and accumulation is at level 3 of 4.",
+     "source_type": "store_review",
+     "source_ref": "fixture://427520/progression",
+     "grade": "C",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    },
+    {
+     "evidence_id": "ev-exploration-1",
+     "gene": "exploration",
+     "quote": "[synthetic fixture] Factorio: exploration and discovery is at level 1 of 4.",
+     "source_type": "store_description",
+     "source_ref": "fixture://427520/exploration",
+     "grade": "A",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    },
+    {
+     "evidence_id": "ev-creation-1",
+     "gene": "creation",
+     "quote": "[synthetic fixture] Factorio: creation and expression is at level 4 of 4.",
+     "source_type": "wiki",
+     "source_ref": "fixture://427520/creation",
+     "grade": "B",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    },
+    {
+     "evidence_id": "ev-narrative-1",
+     "gene": "narrative",
+     "quote": "[synthetic fixture] Factorio: narrative is at level 0 of 4.",
+     "source_type": "store_review",
+     "source_ref": "fixture://427520/narrative",
+     "grade": "C",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    },
+    {
+     "evidence_id": "ev-immersion-1",
+     "gene": "immersion",
+     "quote": "[synthetic fixture] Factorio: world and atmosphere is at level 1 of 4.",
+     "source_type": "store_description",
+     "source_ref": "fixture://427520/immersion",
+     "grade": "A",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    },
+    {
+     "evidence_id": "ev-social-1",
+     "gene": "social",
+     "quote": "[synthetic fixture] Factorio: social dependence is at level 2 of 4.",
+     "source_type": "wiki",
+     "source_ref": "fixture://427520/social",
+     "grade": "B",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    }
+   ],
+   "annotation": {
+    "provider": "fixture",
+    "model": "hand-written",
+    "prompt_version": "fixture",
+    "annotated_at": "2026-11-10T00:00:00Z"
+   }
+  },
+  {
+   "appid": 367520,
+   "name": "Hollow Knight",
+   "status": "verified",
+   "review_note": null,
+   "store": {
+    "short_description": "[synthetic fixture] placeholder description of Hollow Knight.",
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/367520/header.jpg",
+    "store_url": "https://store.steampowered.com/app/367520/",
+    "genres": [
+     "action",
+     "adventure",
+     "indie"
+    ],
+    "tags": [
+     "metroidvania",
+     "souls-like",
+     "platformer",
+     "difficult",
+     "atmospheric"
+    ],
+    "platforms": [
+     "windows",
+     "mac",
+     "linux"
+    ],
+    "social_modes": [
+     "single"
+    ],
+    "languages": [
+     "english",
+     "simplified chinese"
+    ],
+    "is_free": false,
+    "price": {
+     "currency": "USD",
+     "final_cents": 1499,
+     "initial_cents": 1499,
+     "discount_percent": 0,
+     "fetched_at": "2026-11-10T00:00:00Z"
+    },
+    "review_score_desc": null,
+    "total_reviews": null,
+    "fetched_at": "2026-11-10T00:00:00Z"
+   },
+   "genes": {
+    "challenge": {
+     "level": 4,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-challenge-1"
+     ]
+    },
+    "strategy": {
+     "level": 1,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-strategy-1"
+     ]
+    },
+    "pace": {
+     "level": 3,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-pace-1"
+     ]
+    },
+    "progression": {
+     "level": 2,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-progression-1"
+     ]
+    },
+    "exploration": {
+     "level": 4,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-exploration-1"
+     ]
+    },
+    "creation": {
+     "level": 0,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-creation-1"
+     ]
+    },
+    "narrative": {
+     "level": 2,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-narrative-1"
+     ]
+    },
+    "immersion": {
+     "level": 4,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-immersion-1"
+     ]
+    },
+    "social": {
+     "level": 0,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-social-1"
+     ]
+    }
+   },
+   "evidence": [
+    {
+     "evidence_id": "ev-challenge-1",
+     "gene": "challenge",
+     "quote": "[synthetic fixture] Hollow Knight: execution challenge is at level 4 of 4.",
+     "source_type": "store_review",
+     "source_ref": "fixture://367520/challenge",
+     "grade": "C",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    },
+    {
+     "evidence_id": "ev-strategy-1",
+     "gene": "strategy",
+     "quote": "[synthetic fixture] Hollow Knight: strategic depth is at level 1 of 4.",
+     "source_type": "store_description",
+     "source_ref": "fixture://367520/strategy",
+     "grade": "A",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    },
+    {
+     "evidence_id": "ev-pace-1",
+     "gene": "pace",
+     "quote": "[synthetic fixture] Hollow Knight: pace and intensity is at level 3 of 4.",
+     "source_type": "wiki",
+     "source_ref": "fixture://367520/pace",
+     "grade": "B",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    },
+    {
+     "evidence_id": "ev-progression-1",
+     "gene": "progression",
+     "quote": "[synthetic fixture] Hollow Knight: progression and accumulation is at level 2 of 4.",
+     "source_type": "store_review",
+     "source_ref": "fixture://367520/progression",
+     "grade": "C",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    },
+    {
+     "evidence_id": "ev-exploration-1",
+     "gene": "exploration",
+     "quote": "[synthetic fixture] Hollow Knight: exploration and discovery is at level 4 of 4.",
+     "source_type": "store_description",
+     "source_ref": "fixture://367520/exploration",
+     "grade": "A",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    },
+    {
+     "evidence_id": "ev-creation-1",
+     "gene": "creation",
+     "quote": "[synthetic fixture] Hollow Knight: creation and expression is at level 0 of 4.",
+     "source_type": "wiki",
+     "source_ref": "fixture://367520/creation",
+     "grade": "B",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    },
+    {
+     "evidence_id": "ev-narrative-1",
+     "gene": "narrative",
+     "quote": "[synthetic fixture] Hollow Knight: narrative is at level 2 of 4.",
+     "source_type": "store_review",
+     "source_ref": "fixture://367520/narrative",
+     "grade": "C",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    },
+    {
+     "evidence_id": "ev-immersion-1",
+     "gene": "immersion",
+     "quote": "[synthetic fixture] Hollow Knight: world and atmosphere is at level 4 of 4.",
+     "source_type": "store_description",
+     "source_ref": "fixture://367520/immersion",
+     "grade": "A",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    },
+    {
+     "evidence_id": "ev-social-1",
+     "gene": "social",
+     "quote": "[synthetic fixture] Hollow Knight: social dependence is at level 0 of 4.",
+     "source_type": "wiki",
+     "source_ref": "fixture://367520/social",
+     "grade": "B",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    }
+   ],
+   "annotation": {
+    "provider": "fixture",
+    "model": "hand-written",
+    "prompt_version": "fixture",
+    "annotated_at": "2026-11-10T00:00:00Z"
+   }
+  },
+  {
+   "appid": 504230,
+   "name": "Celeste",
+   "status": "verified",
+   "review_note": null,
+   "store": {
+    "short_description": "[synthetic fixture] placeholder description of Celeste.",
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/504230/header.jpg",
+    "store_url": "https://store.steampowered.com/app/504230/",
+    "genres": [
+     "action",
+     "adventure",
+     "indie"
+    ],
+    "tags": [
+     "precision platformer",
+     "difficult",
+     "pixel graphics",
+     "great soundtrack",
+     "platformer"
+    ],
+    "platforms": [
+     "windows",
+     "mac",
+     "linux"
+    ],
+    "social_modes": [
+     "single"
+    ],
+    "languages": [
+     "english",
+     "simplified chinese"
+    ],
+    "is_free": false,
+    "price": {
+     "currency": "USD",
+     "final_cents": 1999,
+     "initial_cents": 1999,
+     "discount_percent": 0,
+     "fetched_at": "2026-11-10T00:00:00Z"
+    },
+    "review_score_desc": null,
+    "total_reviews": null,
+    "fetched_at": "2026-11-10T00:00:00Z"
+   },
+   "genes": {
+    "challenge": {
+     "level": 4,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-challenge-1"
+     ]
+    },
+    "strategy": {
+     "level": 1,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-strategy-1"
+     ]
+    },
+    "pace": {
+     "level": 3,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-pace-1"
+     ]
+    },
+    "progression": {
+     "level": 1,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-progression-1"
+     ]
+    },
+    "exploration": {
+     "level": 1,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-exploration-1"
+     ]
+    },
+    "creation": {
+     "level": 0,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-creation-1"
+     ]
+    },
+    "narrative": {
+     "level": 3,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-narrative-1"
+     ]
+    },
+    "immersion": {
+     "level": 2,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-immersion-1"
+     ]
+    },
+    "social": {
+     "level": 0,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-social-1"
+     ]
+    }
+   },
+   "evidence": [
+    {
+     "evidence_id": "ev-challenge-1",
+     "gene": "challenge",
+     "quote": "[synthetic fixture] Celeste: execution challenge is at level 4 of 4.",
+     "source_type": "store_review",
+     "source_ref": "fixture://504230/challenge",
+     "grade": "C",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    },
+    {
+     "evidence_id": "ev-strategy-1",
+     "gene": "strategy",
+     "quote": "[synthetic fixture] Celeste: strategic depth is at level 1 of 4.",
+     "source_type": "store_description",
+     "source_ref": "fixture://504230/strategy",
+     "grade": "A",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    },
+    {
+     "evidence_id": "ev-pace-1",
+     "gene": "pace",
+     "quote": "[synthetic fixture] Celeste: pace and intensity is at level 3 of 4.",
+     "source_type": "wiki",
+     "source_ref": "fixture://504230/pace",
+     "grade": "B",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    },
+    {
+     "evidence_id": "ev-progression-1",
+     "gene": "progression",
+     "quote": "[synthetic fixture] Celeste: progression and accumulation is at level 1 of 4.",
+     "source_type": "store_review",
+     "source_ref": "fixture://504230/progression",
+     "grade": "C",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    },
+    {
+     "evidence_id": "ev-exploration-1",
+     "gene": "exploration",
+     "quote": "[synthetic fixture] Celeste: exploration and discovery is at level 1 of 4.",
+     "source_type": "store_description",
+     "source_ref": "fixture://504230/exploration",
+     "grade": "A",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    },
+    {
+     "evidence_id": "ev-creation-1",
+     "gene": "creation",
+     "quote": "[synthetic fixture] Celeste: creation and expression is at level 0 of 4.",
+     "source_type": "wiki",
+     "source_ref": "fixture://504230/creation",
+     "grade": "B",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    },
+    {
+     "evidence_id": "ev-narrative-1",
+     "gene": "narrative",
+     "quote": "[synthetic fixture] Celeste: narrative is at level 3 of 4.",
+     "source_type": "store_review",
+     "source_ref": "fixture://504230/narrative",
+     "grade": "C",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    },
+    {
+     "evidence_id": "ev-immersion-1",
+     "gene": "immersion",
+     "quote": "[synthetic fixture] Celeste: world and atmosphere is at level 2 of 4.",
+     "source_type": "store_description",
+     "source_ref": "fixture://504230/immersion",
+     "grade": "A",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    },
+    {
+     "evidence_id": "ev-social-1",
+     "gene": "social",
+     "quote": "[synthetic fixture] Celeste: social dependence is at level 0 of 4.",
+     "source_type": "wiki",
+     "source_ref": "fixture://504230/social",
+     "grade": "B",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    }
+   ],
+   "annotation": {
+    "provider": "fixture",
+    "model": "hand-written",
+    "prompt_version": "fixture",
+    "annotated_at": "2026-11-10T00:00:00Z"
+   }
+  },
+  {
+   "appid": 753640,
+   "name": "Outer Wilds",
+   "status": "verified",
+   "review_note": null,
+   "store": {
+    "short_description": "[synthetic fixture] placeholder description of Outer Wilds.",
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/753640/header.jpg",
+    "store_url": "https://store.steampowered.com/app/753640/",
+    "genres": [
+     "action",
+     "adventure"
+    ],
+    "tags": [
+     "exploration",
+     "space",
+     "mystery",
+     "open world",
+     "atmospheric"
+    ],
+    "platforms": [
+     "windows"
+    ],
+    "social_modes": [
+     "single"
+    ],
+    "languages": [
+     "english",
+     "simplified chinese"
+    ],
+    "is_free": false,
+    "price": {
+     "currency": "USD",
+     "final_cents": 2499,
+     "initial_cents": 2499,
+     "discount_percent": 0,
+     "fetched_at": "2026-11-10T00:00:00Z"
+    },
+    "review_score_desc": null,
+    "total_reviews": null,
+    "fetched_at": "2026-11-10T00:00:00Z"
+   },
+   "genes": {
+    "challenge": {
+     "level": 1,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-challenge-1"
+     ]
+    },
+    "strategy": {
+     "level": 2,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-strategy-1"
+     ]
+    },
+    "pace": {
+     "level": 1,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-pace-1"
+     ]
+    },
+    "progression": {
+     "level": 0,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-progression-1"
+     ]
+    },
+    "exploration": {
+     "level": 4,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-exploration-1"
+     ]
+    },
+    "creation": {
+     "level": 0,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-creation-1"
+     ]
+    },
+    "narrative": {
+     "level": 3,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-narrative-1"
+     ]
+    },
+    "immersion": {
+     "level": 4,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-immersion-1"
+     ]
+    },
+    "social": {
+     "level": 0,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-social-1"
+     ]
+    }
+   },
+   "evidence": [
+    {
+     "evidence_id": "ev-challenge-1",
+     "gene": "challenge",
+     "quote": "[synthetic fixture] Outer Wilds: execution challenge is at level 1 of 4.",
+     "source_type": "wiki",
+     "source_ref": "fixture://753640/challenge",
+     "grade": "B",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    },
+    {
+     "evidence_id": "ev-strategy-1",
+     "gene": "strategy",
+     "quote": "[synthetic fixture] Outer Wilds: strategic depth is at level 2 of 4.",
+     "source_type": "store_review",
+     "source_ref": "fixture://753640/strategy",
+     "grade": "C",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    },
+    {
+     "evidence_id": "ev-pace-1",
+     "gene": "pace",
+     "quote": "[synthetic fixture] Outer Wilds: pace and intensity is at level 1 of 4.",
+     "source_type": "store_description",
+     "source_ref": "fixture://753640/pace",
+     "grade": "A",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    },
+    {
+     "evidence_id": "ev-progression-1",
+     "gene": "progression",
+     "quote": "[synthetic fixture] Outer Wilds: progression and accumulation is at level 0 of 4.",
+     "source_type": "wiki",
+     "source_ref": "fixture://753640/progression",
+     "grade": "B",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    },
+    {
+     "evidence_id": "ev-exploration-1",
+     "gene": "exploration",
+     "quote": "[synthetic fixture] Outer Wilds: exploration and discovery is at level 4 of 4.",
+     "source_type": "store_review",
+     "source_ref": "fixture://753640/exploration",
+     "grade": "C",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    },
+    {
+     "evidence_id": "ev-creation-1",
+     "gene": "creation",
+     "quote": "[synthetic fixture] Outer Wilds: creation and expression is at level 0 of 4.",
+     "source_type": "store_description",
+     "source_ref": "fixture://753640/creation",
+     "grade": "A",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    },
+    {
+     "evidence_id": "ev-narrative-1",
+     "gene": "narrative",
+     "quote": "[synthetic fixture] Outer Wilds: narrative is at level 3 of 4.",
+     "source_type": "wiki",
+     "source_ref": "fixture://753640/narrative",
+     "grade": "B",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    },
+    {
+     "evidence_id": "ev-immersion-1",
+     "gene": "immersion",
+     "quote": "[synthetic fixture] Outer Wilds: world and atmosphere is at level 4 of 4.",
+     "source_type": "store_review",
+     "source_ref": "fixture://753640/immersion",
+     "grade": "C",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    },
+    {
+     "evidence_id": "ev-social-1",
+     "gene": "social",
+     "quote": "[synthetic fixture] Outer Wilds: social dependence is at level 0 of 4.",
+     "source_type": "store_description",
+     "source_ref": "fixture://753640/social",
+     "grade": "A",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    }
+   ],
+   "annotation": {
+    "provider": "fixture",
+    "model": "hand-written",
+    "prompt_version": "fixture",
+    "annotated_at": "2026-11-10T00:00:00Z"
+   }
+  },
+  {
+   "appid": 632470,
+   "name": "Disco Elysium",
+   "status": "verified",
+   "review_note": null,
+   "store": {
+    "short_description": "[synthetic fixture] placeholder description of Disco Elysium.",
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/632470/header.jpg",
+    "store_url": "https://store.steampowered.com/app/632470/",
+    "genres": [
+     "rpg"
+    ],
+    "tags": [
+     "story rich",
+     "choices matter",
+     "detective",
+     "crpg",
+     "great writing"
+    ],
+    "platforms": [
+     "windows",
+     "mac"
+    ],
+    "social_modes": [
+     "single"
+    ],
+    "languages": [
+     "english",
+     "simplified chinese"
+    ],
+    "is_free": false,
+    "price": {
+     "currency": "USD",
+     "final_cents": 3999,
+     "initial_cents": 3999,
+     "discount_percent": 0,
+     "fetched_at": "2026-11-10T00:00:00Z"
+    },
+    "review_score_desc": null,
+    "total_reviews": null,
+    "fetched_at": "2026-11-10T00:00:00Z"
+   },
+   "genes": {
+    "challenge": {
+     "level": 0,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-challenge-1"
+     ]
+    },
+    "strategy": {
+     "level": 2,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-strategy-1"
+     ]
+    },
+    "pace": {
+     "level": 0,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-pace-1"
+     ]
+    },
+    "progression": {
+     "level": 2,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-progression-1"
+     ]
+    },
+    "exploration": {
+     "level": 2,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-exploration-1"
+     ]
+    },
+    "creation": {
+     "level": 1,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-creation-1"
+     ]
+    },
+    "narrative": {
+     "level": 4,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-narrative-1"
+     ]
+    },
+    "immersion": {
+     "level": 4,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-immersion-1"
+     ]
+    },
+    "social": {
+     "level": 0,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-social-1"
+     ]
+    }
+   },
+   "evidence": [
+    {
+     "evidence_id": "ev-challenge-1",
+     "gene": "challenge",
+     "quote": "[synthetic fixture] Disco Elysium: execution challenge is at level 0 of 4.",
+     "source_type": "wiki",
+     "source_ref": "fixture://632470/challenge",
+     "grade": "B",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    },
+    {
+     "evidence_id": "ev-strategy-1",
+     "gene": "strategy",
+     "quote": "[synthetic fixture] Disco Elysium: strategic depth is at level 2 of 4.",
+     "source_type": "store_review",
+     "source_ref": "fixture://632470/strategy",
+     "grade": "C",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    },
+    {
+     "evidence_id": "ev-pace-1",
+     "gene": "pace",
+     "quote": "[synthetic fixture] Disco Elysium: pace and intensity is at level 0 of 4.",
+     "source_type": "store_description",
+     "source_ref": "fixture://632470/pace",
+     "grade": "A",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    },
+    {
+     "evidence_id": "ev-progression-1",
+     "gene": "progression",
+     "quote": "[synthetic fixture] Disco Elysium: progression and accumulation is at level 2 of 4.",
+     "source_type": "wiki",
+     "source_ref": "fixture://632470/progression",
+     "grade": "B",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    },
+    {
+     "evidence_id": "ev-exploration-1",
+     "gene": "exploration",
+     "quote": "[synthetic fixture] Disco Elysium: exploration and discovery is at level 2 of 4.",
+     "source_type": "store_review",
+     "source_ref": "fixture://632470/exploration",
+     "grade": "C",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    },
+    {
+     "evidence_id": "ev-creation-1",
+     "gene": "creation",
+     "quote": "[synthetic fixture] Disco Elysium: creation and expression is at level 1 of 4.",
+     "source_type": "store_description",
+     "source_ref": "fixture://632470/creation",
+     "grade": "A",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    },
+    {
+     "evidence_id": "ev-narrative-1",
+     "gene": "narrative",
+     "quote": "[synthetic fixture] Disco Elysium: narrative is at level 4 of 4.",
+     "source_type": "wiki",
+     "source_ref": "fixture://632470/narrative",
+     "grade": "B",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    },
+    {
+     "evidence_id": "ev-immersion-1",
+     "gene": "immersion",
+     "quote": "[synthetic fixture] Disco Elysium: world and atmosphere is at level 4 of 4.",
+     "source_type": "store_review",
+     "source_ref": "fixture://632470/immersion",
+     "grade": "C",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    },
+    {
+     "evidence_id": "ev-social-1",
+     "gene": "social",
+     "quote": "[synthetic fixture] Disco Elysium: social dependence is at level 0 of 4.",
+     "source_type": "store_description",
+     "source_ref": "fixture://632470/social",
+     "grade": "A",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    }
+   ],
+   "annotation": {
+    "provider": "fixture",
+    "model": "hand-written",
+    "prompt_version": "fixture",
+    "annotated_at": "2026-11-10T00:00:00Z"
+   }
+  },
+  {
+   "appid": 620,
+   "name": "Portal 2",
+   "status": "verified",
+   "review_note": null,
+   "store": {
+    "short_description": "[synthetic fixture] placeholder description of Portal 2.",
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/620/header.jpg",
+    "store_url": "https://store.steampowered.com/app/620/",
+    "genres": [
+     "action",
+     "adventure"
+    ],
+    "tags": [
+     "puzzle",
+     "co-op",
+     "first-person",
+     "funny",
+     "sci-fi"
+    ],
+    "platforms": [
+     "windows",
+     "mac",
+     "linux"
+    ],
+    "social_modes": [
+     "single",
+     "coop"
+    ],
+    "languages": [
+     "english",
+     "simplified chinese"
+    ],
+    "is_free": false,
+    "price": {
+     "currency": "USD",
+     "final_cents": 999,
+     "initial_cents": 999,
+     "discount_percent": 0,
+     "fetched_at": "2026-11-10T00:00:00Z"
+    },
+    "review_score_desc": null,
+    "total_reviews": null,
+    "fetched_at": "2026-11-10T00:00:00Z"
+   },
+   "genes": {
+    "challenge": {
+     "level": 2,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-challenge-1"
+     ]
+    },
+    "strategy": {
+     "level": 3,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-strategy-1"
+     ]
+    },
+    "pace": {
+     "level": 1,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-pace-1"
+     ]
+    },
+    "progression": {
+     "level": 0,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-progression-1"
+     ]
+    },
+    "exploration": {
+     "level": 1,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-exploration-1"
+     ]
+    },
+    "creation": {
+     "level": null,
+     "unknown_reason": "no_evidence"
+    },
+    "narrative": {
+     "level": 3,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-narrative-1"
+     ]
+    },
+    "immersion": {
+     "level": 3,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-immersion-1"
+     ]
+    },
+    "social": {
+     "level": 2,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-social-1"
+     ]
+    }
+   },
+   "evidence": [
+    {
+     "evidence_id": "ev-challenge-1",
+     "gene": "challenge",
+     "quote": "[synthetic fixture] Portal 2: execution challenge is at level 2 of 4.",
+     "source_type": "store_review",
+     "source_ref": "fixture://620/challenge",
+     "grade": "C",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    },
+    {
+     "evidence_id": "ev-strategy-1",
+     "gene": "strategy",
+     "quote": "[synthetic fixture] Portal 2: strategic depth is at level 3 of 4.",
+     "source_type": "store_description",
+     "source_ref": "fixture://620/strategy",
+     "grade": "A",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    },
+    {
+     "evidence_id": "ev-pace-1",
+     "gene": "pace",
+     "quote": "[synthetic fixture] Portal 2: pace and intensity is at level 1 of 4.",
+     "source_type": "wiki",
+     "source_ref": "fixture://620/pace",
+     "grade": "B",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    },
+    {
+     "evidence_id": "ev-progression-1",
+     "gene": "progression",
+     "quote": "[synthetic fixture] Portal 2: progression and accumulation is at level 0 of 4.",
+     "source_type": "store_review",
+     "source_ref": "fixture://620/progression",
+     "grade": "C",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    },
+    {
+     "evidence_id": "ev-exploration-1",
+     "gene": "exploration",
+     "quote": "[synthetic fixture] Portal 2: exploration and discovery is at level 1 of 4.",
+     "source_type": "store_description",
+     "source_ref": "fixture://620/exploration",
+     "grade": "A",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    },
+    {
+     "evidence_id": "ev-narrative-1",
+     "gene": "narrative",
+     "quote": "[synthetic fixture] Portal 2: narrative is at level 3 of 4.",
+     "source_type": "store_review",
+     "source_ref": "fixture://620/narrative",
+     "grade": "C",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    },
+    {
+     "evidence_id": "ev-immersion-1",
+     "gene": "immersion",
+     "quote": "[synthetic fixture] Portal 2: world and atmosphere is at level 3 of 4.",
+     "source_type": "store_description",
+     "source_ref": "fixture://620/immersion",
+     "grade": "A",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    },
+    {
+     "evidence_id": "ev-social-1",
+     "gene": "social",
+     "quote": "[synthetic fixture] Portal 2: social dependence is at level 2 of 4.",
+     "source_type": "wiki",
+     "source_ref": "fixture://620/social",
+     "grade": "B",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    }
+   ],
+   "annotation": {
+    "provider": "fixture",
+    "model": "hand-written",
+    "prompt_version": "fixture",
+    "annotated_at": "2026-11-10T00:00:00Z"
+   }
+  },
+  {
+   "appid": 105600,
+   "name": "Terraria",
+   "status": "verified",
+   "review_note": null,
+   "store": {
+    "short_description": "[synthetic fixture] placeholder description of Terraria.",
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/105600/header.jpg",
+    "store_url": "https://store.steampowered.com/app/105600/",
+    "genres": [
+     "action",
+     "adventure",
+     "indie",
+     "rpg"
+    ],
+    "tags": [
+     "sandbox",
+     "survival",
+     "crafting",
+     "open world survival craft",
+     "2d"
+    ],
+    "platforms": [
+     "windows",
+     "mac",
+     "linux"
+    ],
+    "social_modes": [
+     "single",
+     "coop",
+     "pvp"
+    ],
+    "languages": [
+     "english",
+     "simplified chinese"
+    ],
+    "is_free": false,
+    "price": {
+     "currency": "USD",
+     "final_cents": 999,
+     "initial_cents": 999,
+     "discount_percent": 0,
+     "fetched_at": "2026-11-10T00:00:00Z"
+    },
+    "review_score_desc": null,
+    "total_reviews": null,
+    "fetched_at": "2026-11-10T00:00:00Z"
+   },
+   "genes": {
+    "challenge": {
+     "level": 3,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-challenge-1"
+     ]
+    },
+    "strategy": {
+     "level": 1,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-strategy-1"
+     ]
+    },
+    "pace": {
+     "level": 3,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-pace-1"
+     ]
+    },
+    "progression": {
+     "level": 4,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-progression-1"
+     ]
+    },
+    "exploration": {
+     "level": 4,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-exploration-1"
+     ]
+    },
+    "creation": {
+     "level": 4,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-creation-1"
+     ]
+    },
+    "narrative": {
+     "level": 0,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-narrative-1"
+     ]
+    },
+    "immersion": {
+     "level": 2,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-immersion-1"
+     ]
+    },
+    "social": {
+     "level": 2,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-social-1"
+     ]
+    }
+   },
+   "evidence": [
+    {
+     "evidence_id": "ev-challenge-1",
+     "gene": "challenge",
+     "quote": "[synthetic fixture] Terraria: execution challenge is at level 3 of 4.",
+     "source_type": "store_description",
+     "source_ref": "fixture://105600/challenge",
+     "grade": "A",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    },
+    {
+     "evidence_id": "ev-strategy-1",
+     "gene": "strategy",
+     "quote": "[synthetic fixture] Terraria: strategic depth is at level 1 of 4.",
+     "source_type": "wiki",
+     "source_ref": "fixture://105600/strategy",
+     "grade": "B",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    },
+    {
+     "evidence_id": "ev-pace-1",
+     "gene": "pace",
+     "quote": "[synthetic fixture] Terraria: pace and intensity is at level 3 of 4.",
+     "source_type": "store_review",
+     "source_ref": "fixture://105600/pace",
+     "grade": "C",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    },
+    {
+     "evidence_id": "ev-progression-1",
+     "gene": "progression",
+     "quote": "[synthetic fixture] Terraria: progression and accumulation is at level 4 of 4.",
+     "source_type": "store_description",
+     "source_ref": "fixture://105600/progression",
+     "grade": "A",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    },
+    {
+     "evidence_id": "ev-exploration-1",
+     "gene": "exploration",
+     "quote": "[synthetic fixture] Terraria: exploration and discovery is at level 4 of 4.",
+     "source_type": "wiki",
+     "source_ref": "fixture://105600/exploration",
+     "grade": "B",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    },
+    {
+     "evidence_id": "ev-creation-1",
+     "gene": "creation",
+     "quote": "[synthetic fixture] Terraria: creation and expression is at level 4 of 4.",
+     "source_type": "store_review",
+     "source_ref": "fixture://105600/creation",
+     "grade": "C",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    },
+    {
+     "evidence_id": "ev-narrative-1",
+     "gene": "narrative",
+     "quote": "[synthetic fixture] Terraria: narrative is at level 0 of 4.",
+     "source_type": "store_description",
+     "source_ref": "fixture://105600/narrative",
+     "grade": "A",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    },
+    {
+     "evidence_id": "ev-immersion-1",
+     "gene": "immersion",
+     "quote": "[synthetic fixture] Terraria: world and atmosphere is at level 2 of 4.",
+     "source_type": "wiki",
+     "source_ref": "fixture://105600/immersion",
+     "grade": "B",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    },
+    {
+     "evidence_id": "ev-social-1",
+     "gene": "social",
+     "quote": "[synthetic fixture] Terraria: social dependence is at level 2 of 4.",
+     "source_type": "store_review",
+     "source_ref": "fixture://105600/social",
+     "grade": "C",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    }
+   ],
+   "annotation": {
+    "provider": "fixture",
+    "model": "hand-written",
+    "prompt_version": "fixture",
+    "annotated_at": "2026-11-10T00:00:00Z"
+   }
+  },
+  {
+   "appid": 289070,
+   "name": "Sid Meier's Civilization VI",
+   "status": "verified",
+   "review_note": null,
+   "store": {
+    "short_description": "[synthetic fixture] placeholder description of Sid Meier's Civilization VI.",
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/289070/header.jpg",
+    "store_url": "https://store.steampowered.com/app/289070/",
+    "genres": [
+     "strategy"
+    ],
+    "tags": [
+     "turn-based strategy",
+     "4x",
+     "historical",
+     "grand strategy",
+     "multiplayer"
+    ],
+    "platforms": [
+     "windows",
+     "mac",
+     "linux"
+    ],
+    "social_modes": [
+     "single",
+     "coop",
+     "pvp"
+    ],
+    "languages": [
+     "english",
+     "simplified chinese"
+    ],
+    "is_free": false,
+    "price": {
+     "currency": "USD",
+     "final_cents": 5999,
+     "initial_cents": 5999,
+     "discount_percent": 0,
+     "fetched_at": "2026-11-10T00:00:00Z"
+    },
+    "review_score_desc": null,
+    "total_reviews": null,
+    "fetched_at": "2026-11-10T00:00:00Z"
+   },
+   "genes": {
+    "challenge": {
+     "level": 1,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-challenge-1"
+     ]
+    },
+    "strategy": {
+     "level": 4,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-strategy-1"
+     ]
+    },
+    "pace": {
+     "level": 0,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-pace-1"
+     ]
+    },
+    "progression": {
+     "level": 3,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-progression-1"
+     ]
+    },
+    "exploration": {
+     "level": 2,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-exploration-1"
+     ]
+    },
+    "creation": {
+     "level": 2,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-creation-1"
+     ]
+    },
+    "narrative": {
+     "level": null,
+     "unknown_reason": "no_evidence"
+    },
+    "immersion": {
+     "level": 2,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-immersion-1"
+     ]
+    },
+    "social": {
+     "level": 2,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-social-1"
+     ]
+    }
+   },
+   "evidence": [
+    {
+     "evidence_id": "ev-challenge-1",
+     "gene": "challenge",
+     "quote": "[synthetic fixture] Sid Meier's Civilization VI: execution challenge is at level 1 of 4.",
+     "source_type": "store_review",
+     "source_ref": "fixture://289070/challenge",
+     "grade": "C",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    },
+    {
+     "evidence_id": "ev-strategy-1",
+     "gene": "strategy",
+     "quote": "[synthetic fixture] Sid Meier's Civilization VI: strategic depth is at level 4 of 4.",
+     "source_type": "store_description",
+     "source_ref": "fixture://289070/strategy",
+     "grade": "A",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    },
+    {
+     "evidence_id": "ev-pace-1",
+     "gene": "pace",
+     "quote": "[synthetic fixture] Sid Meier's Civilization VI: pace and intensity is at level 0 of 4.",
+     "source_type": "wiki",
+     "source_ref": "fixture://289070/pace",
+     "grade": "B",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    },
+    {
+     "evidence_id": "ev-progression-1",
+     "gene": "progression",
+     "quote": "[synthetic fixture] Sid Meier's Civilization VI: progression and accumulation is at level 3 of 4.",
+     "source_type": "store_review",
+     "source_ref": "fixture://289070/progression",
+     "grade": "C",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    },
+    {
+     "evidence_id": "ev-exploration-1",
+     "gene": "exploration",
+     "quote": "[synthetic fixture] Sid Meier's Civilization VI: exploration and discovery is at level 2 of 4.",
+     "source_type": "store_description",
+     "source_ref": "fixture://289070/exploration",
+     "grade": "A",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    },
+    {
+     "evidence_id": "ev-creation-1",
+     "gene": "creation",
+     "quote": "[synthetic fixture] Sid Meier's Civilization VI: creation and expression is at level 2 of 4.",
+     "source_type": "wiki",
+     "source_ref": "fixture://289070/creation",
+     "grade": "B",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    },
+    {
+     "evidence_id": "ev-immersion-1",
+     "gene": "immersion",
+     "quote": "[synthetic fixture] Sid Meier's Civilization VI: world and atmosphere is at level 2 of 4.",
+     "source_type": "store_description",
+     "source_ref": "fixture://289070/immersion",
+     "grade": "A",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    },
+    {
+     "evidence_id": "ev-social-1",
+     "gene": "social",
+     "quote": "[synthetic fixture] Sid Meier's Civilization VI: social dependence is at level 2 of 4.",
+     "source_type": "wiki",
+     "source_ref": "fixture://289070/social",
+     "grade": "B",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    }
+   ],
+   "annotation": {
+    "provider": "fixture",
+    "model": "hand-written",
+    "prompt_version": "fixture",
+    "annotated_at": "2026-11-10T00:00:00Z"
+   }
+  },
+  {
+   "appid": 588650,
+   "name": "Dead Cells",
+   "status": "verified",
+   "review_note": null,
+   "store": {
+    "short_description": "[synthetic fixture] placeholder description of Dead Cells.",
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/588650/header.jpg",
+    "store_url": "https://store.steampowered.com/app/588650/",
+    "genres": [
+     "action",
+     "indie"
+    ],
+    "tags": [
+     "roguelite",
+     "metroidvania",
+     "souls-like",
+     "pixel graphics",
+     "action roguelike"
+    ],
+    "platforms": [
+     "windows",
+     "mac",
+     "linux"
+    ],
+    "social_modes": [
+     "single"
+    ],
+    "languages": [
+     "english",
+     "simplified chinese"
+    ],
+    "is_free": false,
+    "price": {
+     "currency": "USD",
+     "final_cents": 2499,
+     "initial_cents": 2499,
+     "discount_percent": 0,
+     "fetched_at": "2026-11-10T00:00:00Z"
+    },
+    "review_score_desc": null,
+    "total_reviews": null,
+    "fetched_at": "2026-11-10T00:00:00Z"
+   },
+   "genes": {
+    "challenge": {
+     "level": 4,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-challenge-1"
+     ]
+    },
+    "strategy": {
+     "level": 1,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-strategy-1"
+     ]
+    },
+    "pace": {
+     "level": 4,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-pace-1"
+     ]
+    },
+    "progression": {
+     "level": 3,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-progression-1"
+     ]
+    },
+    "exploration": {
+     "level": 2,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-exploration-1"
+     ]
+    },
+    "creation": {
+     "level": 0,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-creation-1"
+     ]
+    },
+    "narrative": {
+     "level": 0,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-narrative-1"
+     ]
+    },
+    "immersion": {
+     "level": 2,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-immersion-1"
+     ]
+    },
+    "social": {
+     "level": 0,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-social-1"
+     ]
+    }
+   },
+   "evidence": [
+    {
+     "evidence_id": "ev-challenge-1",
+     "gene": "challenge",
+     "quote": "[synthetic fixture] Dead Cells: execution challenge is at level 4 of 4.",
+     "source_type": "store_review",
+     "source_ref": "fixture://588650/challenge",
+     "grade": "C",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    },
+    {
+     "evidence_id": "ev-strategy-1",
+     "gene": "strategy",
+     "quote": "[synthetic fixture] Dead Cells: strategic depth is at level 1 of 4.",
+     "source_type": "store_description",
+     "source_ref": "fixture://588650/strategy",
+     "grade": "A",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    },
+    {
+     "evidence_id": "ev-pace-1",
+     "gene": "pace",
+     "quote": "[synthetic fixture] Dead Cells: pace and intensity is at level 4 of 4.",
+     "source_type": "wiki",
+     "source_ref": "fixture://588650/pace",
+     "grade": "B",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    },
+    {
+     "evidence_id": "ev-progression-1",
+     "gene": "progression",
+     "quote": "[synthetic fixture] Dead Cells: progression and accumulation is at level 3 of 4.",
+     "source_type": "store_review",
+     "source_ref": "fixture://588650/progression",
+     "grade": "C",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    },
+    {
+     "evidence_id": "ev-exploration-1",
+     "gene": "exploration",
+     "quote": "[synthetic fixture] Dead Cells: exploration and discovery is at level 2 of 4.",
+     "source_type": "store_description",
+     "source_ref": "fixture://588650/exploration",
+     "grade": "A",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    },
+    {
+     "evidence_id": "ev-creation-1",
+     "gene": "creation",
+     "quote": "[synthetic fixture] Dead Cells: creation and expression is at level 0 of 4.",
+     "source_type": "wiki",
+     "source_ref": "fixture://588650/creation",
+     "grade": "B",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    },
+    {
+     "evidence_id": "ev-narrative-1",
+     "gene": "narrative",
+     "quote": "[synthetic fixture] Dead Cells: narrative is at level 0 of 4.",
+     "source_type": "store_review",
+     "source_ref": "fixture://588650/narrative",
+     "grade": "C",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    },
+    {
+     "evidence_id": "ev-immersion-1",
+     "gene": "immersion",
+     "quote": "[synthetic fixture] Dead Cells: world and atmosphere is at level 2 of 4.",
+     "source_type": "store_description",
+     "source_ref": "fixture://588650/immersion",
+     "grade": "A",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    },
+    {
+     "evidence_id": "ev-social-1",
+     "gene": "social",
+     "quote": "[synthetic fixture] Dead Cells: social dependence is at level 0 of 4.",
+     "source_type": "wiki",
+     "source_ref": "fixture://588650/social",
+     "grade": "B",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    }
+   ],
+   "annotation": {
+    "provider": "fixture",
+    "model": "hand-written",
+    "prompt_version": "fixture",
+    "annotated_at": "2026-11-10T00:00:00Z"
+   }
+  },
+  {
+   "appid": 590380,
+   "name": "Into the Breach",
+   "status": "verified",
+   "review_note": null,
+   "store": {
+    "short_description": "[synthetic fixture] placeholder description of Into the Breach.",
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/590380/header.jpg",
+    "store_url": "https://store.steampowered.com/app/590380/",
+    "genres": [
+     "indie",
+     "rpg",
+     "simulation",
+     "strategy"
+    ],
+    "tags": [
+     "turn-based tactics",
+     "mechs",
+     "roguelike",
+     "tactical",
+     "pixel graphics"
+    ],
+    "platforms": [
+     "windows",
+     "mac",
+     "linux"
+    ],
+    "social_modes": [
+     "single"
+    ],
+    "languages": [
+     "english",
+     "simplified chinese"
+    ],
+    "is_free": false,
+    "price": {
+     "currency": "USD",
+     "final_cents": 1499,
+     "initial_cents": 1499,
+     "discount_percent": 0,
+     "fetched_at": "2026-11-10T00:00:00Z"
+    },
+    "review_score_desc": null,
+    "total_reviews": null,
+    "fetched_at": "2026-11-10T00:00:00Z"
+   },
+   "genes": {
+    "challenge": {
+     "level": 3,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-challenge-1"
+     ]
+    },
+    "strategy": {
+     "level": 4,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-strategy-1"
+     ]
+    },
+    "pace": {
+     "level": 0,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-pace-1"
+     ]
+    },
+    "progression": {
+     "level": 2,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-progression-1"
+     ]
+    },
+    "exploration": {
+     "level": 0,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-exploration-1"
+     ]
+    },
+    "creation": {
+     "level": 0,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-creation-1"
+     ]
+    },
+    "narrative": {
+     "level": 1,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-narrative-1"
+     ]
+    },
+    "immersion": {
+     "level": 1,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-immersion-1"
+     ]
+    },
+    "social": {
+     "level": 0,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-social-1"
+     ]
+    }
+   },
+   "evidence": [
+    {
+     "evidence_id": "ev-challenge-1",
+     "gene": "challenge",
+     "quote": "[synthetic fixture] Into the Breach: execution challenge is at level 3 of 4.",
+     "source_type": "wiki",
+     "source_ref": "fixture://590380/challenge",
+     "grade": "B",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    },
+    {
+     "evidence_id": "ev-strategy-1",
+     "gene": "strategy",
+     "quote": "[synthetic fixture] Into the Breach: strategic depth is at level 4 of 4.",
+     "source_type": "store_review",
+     "source_ref": "fixture://590380/strategy",
+     "grade": "C",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    },
+    {
+     "evidence_id": "ev-pace-1",
+     "gene": "pace",
+     "quote": "[synthetic fixture] Into the Breach: pace and intensity is at level 0 of 4.",
+     "source_type": "store_description",
+     "source_ref": "fixture://590380/pace",
+     "grade": "A",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    },
+    {
+     "evidence_id": "ev-progression-1",
+     "gene": "progression",
+     "quote": "[synthetic fixture] Into the Breach: progression and accumulation is at level 2 of 4.",
+     "source_type": "wiki",
+     "source_ref": "fixture://590380/progression",
+     "grade": "B",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    },
+    {
+     "evidence_id": "ev-exploration-1",
+     "gene": "exploration",
+     "quote": "[synthetic fixture] Into the Breach: exploration and discovery is at level 0 of 4.",
+     "source_type": "store_review",
+     "source_ref": "fixture://590380/exploration",
+     "grade": "C",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    },
+    {
+     "evidence_id": "ev-creation-1",
+     "gene": "creation",
+     "quote": "[synthetic fixture] Into the Breach: creation and expression is at level 0 of 4.",
+     "source_type": "store_description",
+     "source_ref": "fixture://590380/creation",
+     "grade": "A",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    },
+    {
+     "evidence_id": "ev-narrative-1",
+     "gene": "narrative",
+     "quote": "[synthetic fixture] Into the Breach: narrative is at level 1 of 4.",
+     "source_type": "wiki",
+     "source_ref": "fixture://590380/narrative",
+     "grade": "B",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    },
+    {
+     "evidence_id": "ev-immersion-1",
+     "gene": "immersion",
+     "quote": "[synthetic fixture] Into the Breach: world and atmosphere is at level 1 of 4.",
+     "source_type": "store_review",
+     "source_ref": "fixture://590380/immersion",
+     "grade": "C",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    },
+    {
+     "evidence_id": "ev-social-1",
+     "gene": "social",
+     "quote": "[synthetic fixture] Into the Breach: social dependence is at level 0 of 4.",
+     "source_type": "store_description",
+     "source_ref": "fixture://590380/social",
+     "grade": "A",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    }
+   ],
+   "annotation": {
+    "provider": "fixture",
+    "model": "hand-written",
+    "prompt_version": "fixture",
+    "annotated_at": "2026-11-10T00:00:00Z"
+   }
+  },
+  {
+   "appid": 548430,
+   "name": "Deep Rock Galactic",
+   "status": "verified",
+   "review_note": null,
+   "store": {
+    "short_description": "[synthetic fixture] placeholder description of Deep Rock Galactic.",
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/548430/header.jpg",
+    "store_url": "https://store.steampowered.com/app/548430/",
+    "genres": [
+     "action"
+    ],
+    "tags": [
+     "co-op",
+     "fps",
+     "class-based",
+     "mining",
+     "procedural generation"
+    ],
+    "platforms": [
+     "windows"
+    ],
+    "social_modes": [
+     "single",
+     "coop"
+    ],
+    "languages": [
+     "english",
+     "simplified chinese"
+    ],
+    "is_free": false,
+    "price": {
+     "currency": "USD",
+     "final_cents": 2999,
+     "initial_cents": 2999,
+     "discount_percent": 0,
+     "fetched_at": "2026-11-10T00:00:00Z"
+    },
+    "review_score_desc": null,
+    "total_reviews": null,
+    "fetched_at": "2026-11-10T00:00:00Z"
+   },
+   "genes": {
+    "challenge": {
+     "level": 2,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-challenge-1"
+     ]
+    },
+    "strategy": {
+     "level": 1,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-strategy-1"
+     ]
+    },
+    "pace": {
+     "level": 3,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-pace-1"
+     ]
+    },
+    "progression": {
+     "level": 3,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-progression-1"
+     ]
+    },
+    "exploration": {
+     "level": 3,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-exploration-1"
+     ]
+    },
+    "creation": {
+     "level": 1,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-creation-1"
+     ]
+    },
+    "narrative": {
+     "level": 0,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-narrative-1"
+     ]
+    },
+    "immersion": {
+     "level": 3,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-immersion-1"
+     ]
+    },
+    "social": {
+     "level": 4,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-social-1"
+     ]
+    }
+   },
+   "evidence": [
+    {
+     "evidence_id": "ev-challenge-1",
+     "gene": "challenge",
+     "quote": "[synthetic fixture] Deep Rock Galactic: execution challenge is at level 2 of 4.",
+     "source_type": "store_description",
+     "source_ref": "fixture://548430/challenge",
+     "grade": "A",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    },
+    {
+     "evidence_id": "ev-strategy-1",
+     "gene": "strategy",
+     "quote": "[synthetic fixture] Deep Rock Galactic: strategic depth is at level 1 of 4.",
+     "source_type": "wiki",
+     "source_ref": "fixture://548430/strategy",
+     "grade": "B",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    },
+    {
+     "evidence_id": "ev-pace-1",
+     "gene": "pace",
+     "quote": "[synthetic fixture] Deep Rock Galactic: pace and intensity is at level 3 of 4.",
+     "source_type": "store_review",
+     "source_ref": "fixture://548430/pace",
+     "grade": "C",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    },
+    {
+     "evidence_id": "ev-progression-1",
+     "gene": "progression",
+     "quote": "[synthetic fixture] Deep Rock Galactic: progression and accumulation is at level 3 of 4.",
+     "source_type": "store_description",
+     "source_ref": "fixture://548430/progression",
+     "grade": "A",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    },
+    {
+     "evidence_id": "ev-exploration-1",
+     "gene": "exploration",
+     "quote": "[synthetic fixture] Deep Rock Galactic: exploration and discovery is at level 3 of 4.",
+     "source_type": "wiki",
+     "source_ref": "fixture://548430/exploration",
+     "grade": "B",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    },
+    {
+     "evidence_id": "ev-creation-1",
+     "gene": "creation",
+     "quote": "[synthetic fixture] Deep Rock Galactic: creation and expression is at level 1 of 4.",
+     "source_type": "store_review",
+     "source_ref": "fixture://548430/creation",
+     "grade": "C",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    },
+    {
+     "evidence_id": "ev-narrative-1",
+     "gene": "narrative",
+     "quote": "[synthetic fixture] Deep Rock Galactic: narrative is at level 0 of 4.",
+     "source_type": "store_description",
+     "source_ref": "fixture://548430/narrative",
+     "grade": "A",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    },
+    {
+     "evidence_id": "ev-immersion-1",
+     "gene": "immersion",
+     "quote": "[synthetic fixture] Deep Rock Galactic: world and atmosphere is at level 3 of 4.",
+     "source_type": "wiki",
+     "source_ref": "fixture://548430/immersion",
+     "grade": "B",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    },
+    {
+     "evidence_id": "ev-social-1",
+     "gene": "social",
+     "quote": "[synthetic fixture] Deep Rock Galactic: social dependence is at level 4 of 4.",
+     "source_type": "store_review",
+     "source_ref": "fixture://548430/social",
+     "grade": "C",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    }
+   ],
+   "annotation": {
+    "provider": "fixture",
+    "model": "hand-written",
+    "prompt_version": "fixture",
+    "annotated_at": "2026-11-10T00:00:00Z"
+   }
+  },
+  {
+   "appid": 294100,
+   "name": "RimWorld",
+   "status": "verified",
+   "review_note": null,
+   "store": {
+    "short_description": "[synthetic fixture] placeholder description of RimWorld.",
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/294100/header.jpg",
+    "store_url": "https://store.steampowered.com/app/294100/",
+    "genres": [
+     "indie",
+     "simulation",
+     "strategy"
+    ],
+    "tags": [
+     "colony sim",
+     "base building",
+     "survival",
+     "management",
+     "sandbox"
+    ],
+    "platforms": [
+     "windows",
+     "mac",
+     "linux"
+    ],
+    "social_modes": [
+     "single"
+    ],
+    "languages": [
+     "english",
+     "simplified chinese"
+    ],
+    "is_free": false,
+    "price": {
+     "currency": "USD",
+     "final_cents": 3499,
+     "initial_cents": 3499,
+     "discount_percent": 0,
+     "fetched_at": "2026-11-10T00:00:00Z"
+    },
+    "review_score_desc": null,
+    "total_reviews": null,
+    "fetched_at": "2026-11-10T00:00:00Z"
+   },
+   "genes": {
+    "challenge": {
+     "level": 2,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-challenge-1"
+     ]
+    },
+    "strategy": {
+     "level": 4,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-strategy-1"
+     ]
+    },
+    "pace": {
+     "level": 1,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-pace-1"
+     ]
+    },
+    "progression": {
+     "level": 2,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-progression-1"
+     ]
+    },
+    "exploration": {
+     "level": 1,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-exploration-1"
+     ]
+    },
+    "creation": {
+     "level": 4,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-creation-1"
+     ]
+    },
+    "narrative": {
+     "level": 3,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-narrative-1"
+     ]
+    },
+    "immersion": {
+     "level": 2,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-immersion-1"
+     ]
+    },
+    "social": {
+     "level": 0,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-social-1"
+     ]
+    }
+   },
+   "evidence": [
+    {
+     "evidence_id": "ev-challenge-1",
+     "gene": "challenge",
+     "quote": "[synthetic fixture] RimWorld: execution challenge is at level 2 of 4.",
+     "source_type": "wiki",
+     "source_ref": "fixture://294100/challenge",
+     "grade": "B",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    },
+    {
+     "evidence_id": "ev-strategy-1",
+     "gene": "strategy",
+     "quote": "[synthetic fixture] RimWorld: strategic depth is at level 4 of 4.",
+     "source_type": "store_review",
+     "source_ref": "fixture://294100/strategy",
+     "grade": "C",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    },
+    {
+     "evidence_id": "ev-pace-1",
+     "gene": "pace",
+     "quote": "[synthetic fixture] RimWorld: pace and intensity is at level 1 of 4.",
+     "source_type": "store_description",
+     "source_ref": "fixture://294100/pace",
+     "grade": "A",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    },
+    {
+     "evidence_id": "ev-progression-1",
+     "gene": "progression",
+     "quote": "[synthetic fixture] RimWorld: progression and accumulation is at level 2 of 4.",
+     "source_type": "wiki",
+     "source_ref": "fixture://294100/progression",
+     "grade": "B",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    },
+    {
+     "evidence_id": "ev-exploration-1",
+     "gene": "exploration",
+     "quote": "[synthetic fixture] RimWorld: exploration and discovery is at level 1 of 4.",
+     "source_type": "store_review",
+     "source_ref": "fixture://294100/exploration",
+     "grade": "C",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    },
+    {
+     "evidence_id": "ev-creation-1",
+     "gene": "creation",
+     "quote": "[synthetic fixture] RimWorld: creation and expression is at level 4 of 4.",
+     "source_type": "store_description",
+     "source_ref": "fixture://294100/creation",
+     "grade": "A",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    },
+    {
+     "evidence_id": "ev-narrative-1",
+     "gene": "narrative",
+     "quote": "[synthetic fixture] RimWorld: narrative is at level 3 of 4.",
+     "source_type": "wiki",
+     "source_ref": "fixture://294100/narrative",
+     "grade": "B",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    },
+    {
+     "evidence_id": "ev-immersion-1",
+     "gene": "immersion",
+     "quote": "[synthetic fixture] RimWorld: world and atmosphere is at level 2 of 4.",
+     "source_type": "store_review",
+     "source_ref": "fixture://294100/immersion",
+     "grade": "C",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    },
+    {
+     "evidence_id": "ev-social-1",
+     "gene": "social",
+     "quote": "[synthetic fixture] RimWorld: social dependence is at level 0 of 4.",
+     "source_type": "store_description",
+     "source_ref": "fixture://294100/social",
+     "grade": "A",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    }
+   ],
+   "annotation": {
+    "provider": "fixture",
+    "model": "hand-written",
+    "prompt_version": "fixture",
+    "annotated_at": "2026-11-10T00:00:00Z"
+   }
+  },
+  {
+   "appid": 264710,
+   "name": "Subnautica",
+   "status": "verified",
+   "review_note": null,
+   "store": {
+    "short_description": "[synthetic fixture] placeholder description of Subnautica.",
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/264710/header.jpg",
+    "store_url": "https://store.steampowered.com/app/264710/",
+    "genres": [
+     "adventure",
+     "indie"
+    ],
+    "tags": [
+     "survival",
+     "open world",
+     "underwater",
+     "exploration",
+     "crafting"
+    ],
+    "platforms": [
+     "windows",
+     "mac"
+    ],
+    "social_modes": [
+     "single"
+    ],
+    "languages": [
+     "english",
+     "simplified chinese"
+    ],
+    "is_free": false,
+    "price": {
+     "currency": "USD",
+     "final_cents": 2999,
+     "initial_cents": 2999,
+     "discount_percent": 0,
+     "fetched_at": "2026-11-10T00:00:00Z"
+    },
+    "review_score_desc": null,
+    "total_reviews": null,
+    "fetched_at": "2026-11-10T00:00:00Z"
+   },
+   "genes": {
+    "challenge": {
+     "level": 1,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-challenge-1"
+     ]
+    },
+    "strategy": {
+     "level": 1,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-strategy-1"
+     ]
+    },
+    "pace": {
+     "level": 1,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-pace-1"
+     ]
+    },
+    "progression": {
+     "level": 3,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-progression-1"
+     ]
+    },
+    "exploration": {
+     "level": 4,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-exploration-1"
+     ]
+    },
+    "creation": {
+     "level": 3,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-creation-1"
+     ]
+    },
+    "narrative": {
+     "level": 2,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-narrative-1"
+     ]
+    },
+    "immersion": {
+     "level": 4,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-immersion-1"
+     ]
+    },
+    "social": {
+     "level": 0,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-social-1"
+     ]
+    }
+   },
+   "evidence": [
+    {
+     "evidence_id": "ev-challenge-1",
+     "gene": "challenge",
+     "quote": "[synthetic fixture] Subnautica: execution challenge is at level 1 of 4.",
+     "source_type": "store_review",
+     "source_ref": "fixture://264710/challenge",
+     "grade": "C",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    },
+    {
+     "evidence_id": "ev-strategy-1",
+     "gene": "strategy",
+     "quote": "[synthetic fixture] Subnautica: strategic depth is at level 1 of 4.",
+     "source_type": "store_description",
+     "source_ref": "fixture://264710/strategy",
+     "grade": "A",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    },
+    {
+     "evidence_id": "ev-pace-1",
+     "gene": "pace",
+     "quote": "[synthetic fixture] Subnautica: pace and intensity is at level 1 of 4.",
+     "source_type": "wiki",
+     "source_ref": "fixture://264710/pace",
+     "grade": "B",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    },
+    {
+     "evidence_id": "ev-progression-1",
+     "gene": "progression",
+     "quote": "[synthetic fixture] Subnautica: progression and accumulation is at level 3 of 4.",
+     "source_type": "store_review",
+     "source_ref": "fixture://264710/progression",
+     "grade": "C",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    },
+    {
+     "evidence_id": "ev-exploration-1",
+     "gene": "exploration",
+     "quote": "[synthetic fixture] Subnautica: exploration and discovery is at level 4 of 4.",
+     "source_type": "store_description",
+     "source_ref": "fixture://264710/exploration",
+     "grade": "A",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    },
+    {
+     "evidence_id": "ev-creation-1",
+     "gene": "creation",
+     "quote": "[synthetic fixture] Subnautica: creation and expression is at level 3 of 4.",
+     "source_type": "wiki",
+     "source_ref": "fixture://264710/creation",
+     "grade": "B",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    },
+    {
+     "evidence_id": "ev-narrative-1",
+     "gene": "narrative",
+     "quote": "[synthetic fixture] Subnautica: narrative is at level 2 of 4.",
+     "source_type": "store_review",
+     "source_ref": "fixture://264710/narrative",
+     "grade": "C",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    },
+    {
+     "evidence_id": "ev-immersion-1",
+     "gene": "immersion",
+     "quote": "[synthetic fixture] Subnautica: world and atmosphere is at level 4 of 4.",
+     "source_type": "store_description",
+     "source_ref": "fixture://264710/immersion",
+     "grade": "A",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    },
+    {
+     "evidence_id": "ev-social-1",
+     "gene": "social",
+     "quote": "[synthetic fixture] Subnautica: social dependence is at level 0 of 4.",
+     "source_type": "wiki",
+     "source_ref": "fixture://264710/social",
+     "grade": "B",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    }
+   ],
+   "annotation": {
+    "provider": "fixture",
+    "model": "hand-written",
+    "prompt_version": "fixture",
+    "annotated_at": "2026-11-10T00:00:00Z"
+   }
+  },
+  {
+   "appid": 999001,
+   "name": "Fixture Obscure Game",
+   "status": "partial",
+   "review_note": "fewer than 5 genes have verified evidence",
+   "store": {
+    "short_description": "[synthetic fixture] placeholder description of Fixture Obscure Game.",
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/999001/header.jpg",
+    "store_url": "https://store.steampowered.com/app/999001/",
+    "genres": [
+     "indie"
+    ],
+    "tags": [
+     "experimental"
+    ],
+    "platforms": [
+     "windows"
+    ],
+    "social_modes": [
+     "single"
+    ],
+    "languages": [
+     "english",
+     "simplified chinese"
+    ],
+    "is_free": false,
+    "price": {
+     "currency": "USD",
+     "final_cents": 499,
+     "initial_cents": 499,
+     "discount_percent": 0,
+     "fetched_at": "2026-11-10T00:00:00Z"
+    },
+    "review_score_desc": null,
+    "total_reviews": null,
+    "fetched_at": "2026-11-10T00:00:00Z"
+   },
+   "genes": {
+    "challenge": {
+     "level": null,
+     "unknown_reason": "no_evidence"
+    },
+    "strategy": {
+     "level": 3,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-strategy-1"
+     ]
+    },
+    "pace": {
+     "level": null,
+     "unknown_reason": "no_evidence"
+    },
+    "progression": {
+     "level": null,
+     "unknown_reason": "no_evidence"
+    },
+    "exploration": {
+     "level": null,
+     "unknown_reason": "no_evidence"
+    },
+    "creation": {
+     "level": null,
+     "unknown_reason": "no_evidence"
+    },
+    "narrative": {
+     "level": 2,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-narrative-1"
+     ]
+    },
+    "immersion": {
+     "level": null,
+     "unknown_reason": "no_evidence"
+    },
+    "social": {
+     "level": 0,
+     "confidence": "high",
+     "evidence_ids": [
+      "ev-social-1"
+     ]
+    }
+   },
+   "evidence": [
+    {
+     "evidence_id": "ev-strategy-1",
+     "gene": "strategy",
+     "quote": "[synthetic fixture] Fixture Obscure Game: strategic depth is at level 3 of 4.",
+     "source_type": "store_review",
+     "source_ref": "fixture://999001/strategy",
+     "grade": "C",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    },
+    {
+     "evidence_id": "ev-narrative-1",
+     "gene": "narrative",
+     "quote": "[synthetic fixture] Fixture Obscure Game: narrative is at level 2 of 4.",
+     "source_type": "wiki",
+     "source_ref": "fixture://999001/narrative",
+     "grade": "B",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    },
+    {
+     "evidence_id": "ev-social-1",
+     "gene": "social",
+     "quote": "[synthetic fixture] Fixture Obscure Game: social dependence is at level 0 of 4.",
+     "source_type": "store_description",
+     "source_ref": "fixture://999001/social",
+     "grade": "A",
+     "match_score": 1.0,
+     "verified_at": "2026-11-10T00:00:00Z"
+    }
+   ],
+   "annotation": {
+    "provider": "fixture",
+    "model": "hand-written",
+    "prompt_version": "fixture",
+    "annotated_at": "2026-11-10T00:00:00Z"
+   }
+  }
+ ]
+}
