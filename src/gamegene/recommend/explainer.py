@@ -12,7 +12,8 @@ def template_explanation(
     game: GameRecord, shared: list[SharedGene], *, mismatch: str | None = None
 ) -> Explanation:
     """Deterministic fallback, never fails. generated_by='template'. One reason per
-    shared gene (max 3): '<基因中文名>：你的偏好 x/4，本作 y/4。证据："<quote>"'."""
+    shared gene (max 3): '你想要的强度是 x / 4，本作为 y / 4。' (the UI already shows the
+    gene name and the evidence quote next to each reason, so do not repeat them)."""
     raise NotImplementedError("Dev B: task B4")
 
 

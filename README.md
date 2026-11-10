@@ -7,6 +7,8 @@ recommends without a verifiable evidence sentence.
 SYE 6602 课程项目（**其他工具**路线）。按九维“设计基因”而不是类型标签推荐 Steam 游戏，输出同类轨与
 其他轨两条推荐；每条推荐都必须附带可核验的证据句，证据不足时明确拒绝推荐。
 
+![recommendations](docs/screenshots/recommendations.png)
+
 ## Quick start · 快速开始
 
 ```bash

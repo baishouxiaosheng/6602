@@ -46,7 +46,7 @@ def _template(shared: list[SharedGene], mismatch: str | None = None) -> Explanat
         Reason(
             gene=s.gene,
             evidence_id=s.evidence_id,
-            text=f"{GENES[s.gene].label_zh}：你的偏好 {s.user_target:.1f}/4，本作 {s.game_level}/4。",
+            text=f"你想要的强度是 {s.user_target:.1f} / 4，本作为 {s.game_level} / 4。",
         )
         for s in shared[:3]
     ]

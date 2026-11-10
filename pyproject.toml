@@ -44,3 +44,6 @@ src = ["src", "tests"]
 [tool.ruff.lint]
 select = ["E", "F", "I", "UP", "B", "SIM"]
 ignore = ["E501"]
+
+[tool.ruff.lint.per-file-ignores]
+"src/gamegene/app/ui.py" = ["SIM117"]  # nested Gradio layout blocks read better

@@ -7,14 +7,11 @@ panel, never a stack trace and never a silent blank.
 
 from __future__ import annotations
 
-import json
-
 import gradio as gr
 
 from ..config import Settings, load_settings
 from ..contracts.errors import ErrorResponse, GameGeneError, InvalidInput
 from ..contracts.models import (
-    SUPPORTED_MODES,
     HardFilters,
     Platform,
     ProfileRequest,
@@ -35,7 +32,7 @@ LANG_CHOICES = [
     ("繁體中文", "traditional chinese"),
     ("日本語", "japanese"),
 ]
-EMPTY_RUN = ("", "", "", "[]")
+EMPTY_RUN = ("", "", "[]")
 
 
 def _error(err: Exception) -> str:
@@ -159,122 +156,154 @@ def build_ui(service: GameGeneService | None = None, settings: Settings | None =
         except Exception:  # noqa: BLE001 - the header must always render
             return render.hero_html(None, settings.service)
 
+    def on_progress(*answers):
+        done = sum(1 for a in answers if a)
+        return render.progress_html(done, len(answers))
+
+    def go_recommend():
+        return gr.Tabs(selected="rec")
+
     # ------------------------------------------------------------ layout
-    with gr.Blocks(title="Game Gene Agent", css=render.CSS, theme=gr.themes.Base()) as demo:
+    with gr.Blocks(
+        title="Game Gene Agent", css=render.CSS, theme=gr.themes.Base(), fill_width=True
+    ) as demo:
         system_box = gr.HTML(render.hero_html(None, settings.service))
 
-        with gr.Tab("① 画像"):
-            with gr.Row():
-                name = gr.Textbox(label="昵称", placeholder="1–40 个字符", scale=2)
-                pid_in = gr.Textbox(label="画像 ID（留空 = 新建；填写 = 修改已有画像）", scale=2)
-                load_btn = gr.Button("读取已有画像", scale=1)
-            steam = gr.Textbox(
-                label="Steam 个人资料链接或 64 位 ID（可选，需公开游戏库）",
-                placeholder="https://steamcommunity.com/id/…",
-            )
-            gr.Markdown("### 访谈（每题必选）")
-            answer_inputs = []
-            for q in spec.questions:
-                choices = [(o.label_zh, o.id) for o in q.options]
-                if q.max_choices > 1:
-                    answer_inputs.append(
-                        gr.CheckboxGroup(choices=choices, label=q.prompt_zh, elem_classes="gg-q")
+        with gr.Tabs() as tabs:
+            with gr.Tab("① 建立画像", id="profile"):
+                with gr.Row(equal_height=False):
+                    with gr.Column(scale=7, min_width=420):
+                        with gr.Group(elem_classes="gg-panel"):
+                            gr.HTML(render.section_title("基本信息"))
+                            with gr.Row():
+                                name = gr.Textbox(
+                                    label="昵称", placeholder="1–40 个字符", min_width=200
+                                )
+                                steam = gr.Textbox(
+                                    label="Steam 资料链接或 64 位 ID（可选，需公开游戏库）",
+                                    placeholder="https://steamcommunity.com/id/…",
+                                    min_width=280,
+                                    scale=2,
+                                )
+                        gr.HTML(render.section_title("访谈", "凭第一直觉选，每题必答"))
+                        progress = gr.HTML(render.progress_html(0, len(spec.questions)))
+                        answer_inputs = []
+                        with gr.Column(elem_classes="gg-qgrid"):
+                            for q in spec.questions:
+                                choices = [(o.label_zh, o.id) for o in q.options]
+                                if q.max_choices > 1:
+                                    answer_inputs.append(
+                                        gr.CheckboxGroup(
+                                            choices=choices,
+                                            label=q.prompt_zh,
+                                            elem_classes="gg-q gg-multi",
+                                        )
+                                    )
+                                else:
+                                    answer_inputs.append(
+                                        gr.Radio(
+                                            choices=choices, label=q.prompt_zh, elem_classes="gg-q"
+                                        )
+                                    )
+                        with gr.Accordion(
+                            "硬性过滤条件（可选）", open=False, elem_classes="gg-acc"
+                        ):
+                            with gr.Row():
+                                plats = gr.CheckboxGroup(
+                                    PLATFORM_CHOICES, label="平台（不选 = 不限）"
+                                )
+                                socials = gr.CheckboxGroup(
+                                    SOCIAL_CHOICES, label="社交模式（不选 = 不限）"
+                                )
+                            with gr.Row():
+                                max_price = gr.Number(
+                                    label="最高价格（0 = 不限）", value=0, minimum=0
+                                )
+                                lang = gr.Dropdown(LANG_CHOICES, value="", label="必须支持的语言")
+                                excl_tags = gr.Textbox(
+                                    label="排除的标签（英文，逗号分隔）", placeholder="horror, pvp"
+                                )
+                            excl_owned = gr.Checkbox(value=True, label="排除已拥有的游戏")
+                    with gr.Column(scale=4, min_width=320, elem_classes="gg-side"):
+                        profile_out = gr.HTML(render.profile_placeholder())
+                        build_btn = gr.Button("生成 / 更新画像", variant="primary")
+                        goto_btn = gr.Button("用这个画像获取推荐 →")
+                        with gr.Accordion("修改已有画像", open=False, elem_classes="gg-acc"):
+                            pid_in = gr.Textbox(
+                                label="画像 ID（留空 = 新建）", placeholder="p-1a2b3c4d"
+                            )
+                            load_btn = gr.Button("读取这个画像")
+
+            with gr.Tab("② 获取推荐", id="rec"):
+                with gr.Group(elem_classes="gg-panel"), gr.Row(equal_height=True):
+                    pid_rec = gr.Textbox(
+                        label="画像 ID", placeholder="先在“建立画像”页生成", scale=3, min_width=200
                     )
-                else:
-                    answer_inputs.append(
-                        gr.Radio(choices=choices, label=q.prompt_zh, elem_classes="gg-q")
+                    mode = gr.Dropdown(
+                        [(v, k) for k, v in MODE_LABELS.items()],
+                        value="both",
+                        label="模式（可手动输入其他值）",
+                        allow_custom_value=True,
+                        scale=2,
+                        min_width=180,
                     )
-            with gr.Accordion("硬性过滤条件（可选）", open=False):
-                with gr.Row():
-                    plats = gr.CheckboxGroup(
-                        PLATFORM_CHOICES, label="平台（满足任一即可；不选 = 不限）"
+                    top_k = gr.Slider(
+                        1, 10, value=3, step=1, label="每条轨道最多几款", scale=2, min_width=200
                     )
-                    socials = gr.CheckboxGroup(
-                        SOCIAL_CHOICES, label="社交模式（满足任一即可；不选 = 不限）"
+                    rec_btn = gr.Button("获取推荐", variant="primary", scale=2, min_width=160)
+                rec_summary = gr.HTML()
+                rec_body = gr.HTML(
+                    render.empty_state(
+                        "还没有推荐结果",
+                        "填写画像 ID 后点击“获取推荐”，两条轨道的结果会显示在这里。",
                     )
-                with gr.Row():
-                    max_price = gr.Number(label="最高价格（0 = 不限）", value=0, minimum=0)
-                    lang = gr.Dropdown(LANG_CHOICES, value="", label="必须支持的语言")
-                    excl_owned = gr.Checkbox(value=True, label="排除已拥有的游戏")
-                excl_tags = gr.Textbox(
-                    label="排除的标签（英文，逗号分隔）", placeholder="horror, pvp"
                 )
-            build_btn = gr.Button("生成 / 更新画像", variant="primary")
-            profile_out = gr.HTML()
+                with gr.Accordion(
+                    "执行轨迹（请求 → 分支 → 中间数据 → 保存结果）",
+                    open=False,
+                    elem_classes="gg-acc",
+                ):
+                    rec_trace = gr.Code(language="json", value="[]")
 
-        with gr.Tab("② 推荐"):
-            with gr.Row():
-                pid_rec = gr.Textbox(label="画像 ID", scale=2)
-                mode = gr.Dropdown(
-                    [(v, k) for k, v in MODE_LABELS.items()],
-                    value="both",
-                    label="模式",
-                    allow_custom_value=True,
-                    info="可手动输入其他值以测试“无匹配路径”",
-                    scale=1,
+            with gr.Tab("③ 历史记录", id="history"):
+                with gr.Group(elem_classes="gg-panel"):
+                    with gr.Row(equal_height=True):
+                        pid_hist = gr.Textbox(
+                            label="按画像 ID 筛选（留空 = 全部）", scale=2, min_width=200
+                        )
+                        hist_pick = gr.Dropdown(
+                            choices=[],
+                            label="已保存的运行（时间为 UTC，新的在前）",
+                            scale=5,
+                            min_width=280,
+                        )
+                        hist_btn = gr.Button("刷新列表", scale=1, min_width=120)
+                hist_msg = gr.HTML()
+                hist_summary = gr.HTML()
+                hist_body = gr.HTML(
+                    render.empty_state(
+                        "选择一条运行", "点击“刷新列表”，再从下拉框中选择要回看的运行。"
+                    )
                 )
-                top_k = gr.Slider(1, 10, value=3, step=1, label="每条轨道最多几款", scale=1)
-            rec_btn = gr.Button("获取推荐", variant="primary")
-            rec_banner = gr.HTML()
-            gr.Markdown("### 同类轨 · 符合你熟悉的类型")
-            rec_same = gr.HTML()
-            gr.Markdown("### 其他轨 · 表层类型不同，设计基因相近")
-            rec_cross = gr.HTML()
-            with gr.Accordion("执行轨迹（请求 → 分支 → 中间数据 → 保存结果）", open=False):
-                rec_trace = gr.Code(language="json", value="[]")
+                with gr.Accordion("执行轨迹", open=False, elem_classes="gg-acc"):
+                    hist_trace = gr.Code(language="json", value="[]")
 
-        with gr.Tab("③ 历史"):
-            with gr.Row():
-                pid_hist = gr.Textbox(label="按画像 ID 筛选（留空 = 全部）", scale=3)
-                hist_btn = gr.Button("刷新", scale=1)
-            hist_msg = gr.HTML()
-            hist_pick = gr.Dropdown(choices=[], label="已保存的运行（时间为 UTC，新的在前）")
-            hist_banner = gr.HTML()
-            gr.Markdown("### 同类轨")
-            hist_same = gr.HTML()
-            gr.Markdown("### 其他轨")
-            hist_cross = gr.HTML()
-            with gr.Accordion("执行轨迹", open=False):
-                hist_trace = gr.Code(language="json", value="[]")
-
-        with gr.Tab("④ 说明"):
-            gr.Markdown(
-                "**证据等级**　A：官方文本逐字可查；B：Wiki 逐字可查或至少两条评测佐证；C：单条评测、模糊匹配或标签推断。\n\n"
-                "**推荐门槛**　匹配分 ≥ 72 且至少一个共同基因有 A/B 级证据；否则只给出“最接近的候选”或明确不推荐。\n\n"
-                "**同类轨 / 其他轨**　按游戏表层标签与你熟悉类型的重合度划分（≥ 30% 为同类轨）。"
-            )
-            gr.Code(
-                json.dumps(
-                    {"supported_modes": list(SUPPORTED_MODES), "interview": spec.version},
-                    ensure_ascii=False,
-                    indent=2,
-                ),
-                language="json",
-                label="接口信息",
-            )
+            with gr.Tab("④ 说明", id="help"):
+                gr.HTML(render.help_html())
 
         profile_form = [name, pid_in, steam, plats, socials, max_price, lang, excl_tags, excl_owned]
         build_btn.click(on_build, profile_form + answer_inputs, [profile_out, pid_in, pid_rec])
         load_btn.click(
             on_load,
             [pid_in],
-            [
-                profile_out,
-                name,
-                pid_rec,
-                plats,
-                socials,
-                max_price,
-                lang,
-                excl_tags,
-                excl_owned,
-                *answer_inputs,
-            ],
-        )
-        rec_btn.click(
-            on_recommend, [pid_rec, mode, top_k], [rec_banner, rec_same, rec_cross, rec_trace]
-        )
+            [profile_out, name, pid_rec, plats, socials, max_price, lang, excl_tags, excl_owned]
+            + answer_inputs,
+        ).then(on_progress, answer_inputs, [progress])
+        for box in answer_inputs:
+            box.change(on_progress, answer_inputs, [progress], show_progress="hidden")
+        goto_btn.click(go_recommend, None, [tabs])
+        rec_btn.click(on_recommend, [pid_rec, mode, top_k], [rec_summary, rec_body, rec_trace])
         hist_btn.click(on_history, [pid_hist], [hist_msg, hist_pick])
-        hist_pick.change(on_open_run, [hist_pick], [hist_banner, hist_same, hist_cross, hist_trace])
+        hist_pick.change(on_open_run, [hist_pick], [hist_summary, hist_body, hist_trace])
         demo.load(on_stats, None, [system_box])
     return demo
