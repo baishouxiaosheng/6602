@@ -27,9 +27,10 @@ The implementation is complete through Batch 6C. See
 
 ## Interface
 
-The React UI uses a dark storefront-style theme (deep navy surfaces, light-blue accent,
-green compatibility badges), a centred fluid layout, a nine-axis gene radar on the profile
-step, and full-width recommendation rows with a Steam capsule image and store link.
+The React UI follows Steam storefront conventions: flat square-cornered panels on a deep
+navy background, a rectangular step bar, small tag chips, green action buttons, a
+discount-block style compatibility badge, a nine-axis gene radar on the profile step, and
+full-width recommendation rows with a capsule image and store link.
 
 ![Recommendations](docs/screenshots/recommendations.png)
 
