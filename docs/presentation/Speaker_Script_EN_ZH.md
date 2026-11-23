@@ -11,7 +11,7 @@ Final presentation, 27 November 2026 · PANG Junqing, LIU Tengxuan, GUO Yuchen, 
 
 **EN** Hello, we are Pang Junqing, Liu Tengxuan, Guo Yuchen and Zheng Yufei, presenting Game Gene Agent. It recommends Steam games by comparing nine design genes rather than genre tags, and it only shows a match when stored evidence supports it. We took the Another-Tool route: a FastAPI back end, a React front end, SQLite, the Steam Web API and Qwen.
 
-**中** 大家好，我们是庞俊清、刘腾轩、郭宇辰、郑宇飞（姓名汉字请按实际更正），今天介绍 Game Gene Agent。它不按类型标签，而是通过比较九个“设计基因”来推荐 Steam 游戏，并且只有在已保存的证据支持时才展示匹配。我们走的是“其他工具”路线：FastAPI 后端、React 前端、SQLite、Steam Web API 和通义千问。
+**中** 大家好，我们是 Pang Junqing、Liu Tengxuan、Guo Yuchen、Zheng Yufei，今天介绍 Game Gene Agent。它不按类型标签，而是通过比较九个“设计基因”来推荐 Steam 游戏，并且只有在已保存的证据支持时才展示匹配。我们走的是“其他工具”路线：FastAPI 后端、React 前端、SQLite、Steam Web API 和通义千问。
 
 ---
 
