@@ -1,0 +1,674 @@
+{
+ "meta": {
+  "fixture": "game_gene_agent_test5",
+  "version": "1.0",
+  "date": "2026-11-21",
+  "producer": "成员B数据流水线产出(真实Steam快照+真实LLM标注, 5/5 verified)",
+  "for": "成员A框架测试用: 问卷-画像-召回-双轨切分-结果展示全流程的最小种子数据",
+  "gene_scale": "0..4整数; null=证据不足(不是0); social多为0属正常(单人游戏)",
+  "evidence_rules": "非null基因每维至少1条evidence; quote_original须能在对应快照原文中做子串匹配(trace check)",
+  "notes": [
+   "Opus Magnum(558990)按V1.3第4节规则取代Obra Dinn(653530); Obra Dinn快照保留, 网络恢复可回归名单",
+   "本文件嵌入的steam字段来自抓取当日快照, 价格/在售状态非实时, 框架测试不做价格断言",
+   "评论快照在pipeline/snapshots/<appid>_reviews.json, 供Stage B与证据校验测试用",
+   "trace check纪律: 匹配前必须做引号/空白归一化(原文用弯引号U+2019, LLM常输出直引号, Unpacking的narrative证据即此案例); 匹配池按source_locator路由(description/genres/categories/about_the_game)"
+  ]
+ },
+ "games": [
+  {
+   "appid": 1145360,
+   "name": "Hades",
+   "genres": [
+    "Action",
+    "Indie",
+    "RPG"
+   ],
+   "role": "Action桶; 描述155字符, Stage A直接标齐; 测试正常路径",
+   "data": {
+    "steam": {
+     "name": "Hades",
+     "release_date": null,
+     "is_free": false,
+     "price_usd_cents": 2499,
+     "description": "Defy the god of the dead as you hack and slash out of the Underworld in this rogue-like dungeon crawler from the creators of Bastion, Transistor, and Pyre.",
+     "genres": [
+      "Action",
+      "Indie",
+      "RPG"
+     ],
+     "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Full controller support",
+      "Steam Trading Cards",
+      "Captions available",
+      "Steam Cloud",
+      "Remote Play on Phone",
+      "Remote Play on Tablet",
+      "Remote Play on TV",
+      "Family Sharing"
+     ]
+    },
+    "gene_annotation": {
+     "genes": {
+      "suggested_levels": {
+       "challenge": 3,
+       "strategy": null,
+       "pace": 3,
+       "progression": null,
+       "exploration": 2,
+       "creation": null,
+       "narrative": 2,
+       "immersion": 2,
+       "social": 0
+      }
+     },
+     "evidence": [
+      {
+       "evidence_id": "ev_1145360_challenge",
+       "gene_id": "challenge",
+       "source_type": "official_description",
+       "source_priority": "high",
+       "trace_status": "verified",
+       "level_support": "supported",
+       "quote_original": "rogue-like",
+       "source_locator": "appdetails.about_the_game",
+       "source_record_id": "src_1145360"
+      },
+      {
+       "evidence_id": "ev_1145360_pace",
+       "gene_id": "pace",
+       "source_type": "official_description",
+       "source_priority": "high",
+       "trace_status": "verified",
+       "level_support": "supported",
+       "quote_original": "hack and slash",
+       "source_locator": "appdetails.about_the_game",
+       "source_record_id": "src_1145360"
+      },
+      {
+       "evidence_id": "ev_1145360_exploration",
+       "gene_id": "exploration",
+       "source_type": "official_description",
+       "source_priority": "high",
+       "trace_status": "verified",
+       "level_support": "supported",
+       "quote_original": "rogue-like dungeon crawler",
+       "source_locator": "appdetails.about_the_game",
+       "source_record_id": "src_1145360"
+      },
+      {
+       "evidence_id": "ev_1145360_narrative",
+       "gene_id": "narrative",
+       "source_type": "official_description",
+       "source_priority": "high",
+       "trace_status": "verified",
+       "level_support": "supported",
+       "quote_original": "Defy the god of the dead",
+       "source_locator": "appdetails.about_the_game",
+       "source_record_id": "src_1145360"
+      },
+      {
+       "evidence_id": "ev_1145360_immersion",
+       "gene_id": "immersion",
+       "source_type": "official_description",
+       "source_priority": "high",
+       "trace_status": "verified",
+       "level_support": "supported",
+       "quote_original": "out of the Underworld",
+       "source_locator": "appdetails.about_the_game",
+       "source_record_id": "src_1145360"
+      },
+      {
+       "evidence_id": "ev_1145360_social",
+       "gene_id": "social",
+       "source_type": "genre_mapping",
+       "source_priority": "medium",
+       "trace_status": "verified",
+       "level_support": "supported",
+       "quote_original": "Single-player",
+       "source_locator": "appdetails.categories",
+       "source_record_id": "src_1145360"
+      }
+     ],
+     "descriptors": [
+      "Underworld",
+      "god of the dead"
+     ],
+     "notes": null
+    },
+    "reviews_available": 12
+   }
+  },
+  {
+   "appid": 558990,
+   "name": "Opus Magnum",
+   "genres": [
+    "Strategy",
+    "Indie",
+    "Simulation"
+   ],
+   "role": "替补Obra Dinn(653530, 本机appdetails稳定失败, 按V1.3第4节替换规则进入); 官方资料偏薄, 测Stage A边界",
+   "data": {
+    "steam": {
+     "name": "Opus Magnum",
+     "release_date": null,
+     "is_free": false,
+     "price_usd_cents": 1999,
+     "description": "Opus Magnum is the latest open-ended puzzle game from Zachtronics, the creators of SpaceChem, Infinifactory, and SHENZHEN I/O. Design and build machines that assemble potions, poisons, and more using the alchemical engineer’s most advanced tool: the transmutation engine!",
+     "genres": [
+      "Indie",
+      "Simulation"
+     ],
+     "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Steam Workshop",
+      "Steam Cloud",
+      "Steam Leaderboards",
+      "Includes level editor",
+      "Family Sharing"
+     ]
+    },
+    "gene_annotation": {
+     "genes": {
+      "suggested_levels": {
+       "challenge": 3,
+       "strategy": 3,
+       "pace": null,
+       "progression": 1,
+       "exploration": null,
+       "creation": 4,
+       "narrative": null,
+       "immersion": null,
+       "social": 0
+      }
+     },
+     "evidence": [
+      {
+       "evidence_id": "ev_558990_challenge",
+       "gene_id": "challenge",
+       "source_type": "official_description",
+       "source_priority": "high",
+       "trace_status": "verified",
+       "level_support": "supported",
+       "quote_original": "open-ended puzzle game",
+       "source_locator": "appdetails.about_the_game",
+       "source_record_id": "src_558990"
+      },
+      {
+       "evidence_id": "ev_558990_strategy",
+       "gene_id": "strategy",
+       "source_type": "official_description",
+       "source_priority": "high",
+       "trace_status": "verified",
+       "level_support": "supported",
+       "quote_original": "Design and build machines that assemble potions, poisons, and more",
+       "source_locator": "appdetails.about_the_game",
+       "source_record_id": "src_558990"
+      },
+      {
+       "evidence_id": "ev_558990_creation",
+       "gene_id": "creation",
+       "source_type": "official_description",
+       "source_priority": "high",
+       "trace_status": "verified",
+       "level_support": "supported",
+       "quote_original": "Design and build machines that assemble potions, poisons, and more",
+       "source_locator": "appdetails.about_the_game",
+       "source_record_id": "src_558990"
+      },
+      {
+       "evidence_id": "ev_558990_creation_2",
+       "gene_id": "creation",
+       "source_type": "genre_mapping",
+       "source_priority": "medium",
+       "trace_status": "verified",
+       "level_support": "supported",
+       "quote_original": "Includes level editor",
+       "source_locator": "appdetails.categories",
+       "source_record_id": "src_558990"
+      },
+      {
+       "evidence_id": "ev_558990_progression",
+       "gene_id": "progression",
+       "source_type": "genre_mapping",
+       "source_priority": "medium",
+       "trace_status": "verified",
+       "level_support": "supported",
+       "quote_original": "Steam Achievements",
+       "source_locator": "appdetails.categories",
+       "source_record_id": "src_558990"
+      },
+      {
+       "evidence_id": "ev_558990_social",
+       "gene_id": "social",
+       "source_type": "genre_mapping",
+       "source_priority": "medium",
+       "trace_status": "verified",
+       "level_support": "supported",
+       "quote_original": "Single-player",
+       "source_locator": "appdetails.categories",
+       "source_record_id": "src_558990"
+      }
+     ],
+     "descriptors": [
+      "alchemy",
+      "engineering"
+     ],
+     "notes": null
+    },
+    "reviews_available": 12
+   }
+  },
+  {
+   "appid": 646570,
+   "name": "Slay the Spire",
+   "genres": [
+    "Indie",
+    "Strategy",
+    "Card & Board Game"
+   ],
+   "role": "Strategy桶; 策略/构筑类代表; pace=0(回合制)是低分端测试用例",
+   "data": {
+    "steam": {
+     "name": "Slay the Spire",
+     "release_date": null,
+     "is_free": false,
+     "price_usd_cents": 2499,
+     "description": "We fused card games and roguelikes together to make the best single player deckbuilder we could. Craft a unique deck, encounter bizarre creatures, discover relics of immense power, and Slay the Spire!",
+     "genres": [
+      "Indie",
+      "Strategy"
+     ],
+     "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Full controller support",
+      "Steam Trading Cards",
+      "Steam Workshop",
+      "Adjustable Text Size",
+      "Custom Volume Controls",
+      "Mouse Only Option",
+      "Playable without Timed Input",
+      "Save Anytime",
+      "Touch Only Option",
+      "Steam Cloud",
+      "Stats",
+      "Steam Leaderboards",
+      "Remote Play on Phone",
+      "Remote Play on Tablet",
+      "Remote Play on TV",
+      "Family Sharing"
+     ]
+    },
+    "gene_annotation": {
+     "genes": {
+      "suggested_levels": {
+       "challenge": 3,
+       "strategy": 3,
+       "pace": 0,
+       "progression": 2,
+       "exploration": 2,
+       "creation": 4,
+       "narrative": null,
+       "immersion": null,
+       "social": 0
+      }
+     },
+     "evidence": [
+      {
+       "evidence_id": "ev_646570_challenge",
+       "gene_id": "challenge",
+       "source_type": "official_description",
+       "source_priority": "high",
+       "trace_status": "verified",
+       "level_support": "supported",
+       "quote_original": "We fused card games and roguelikes together",
+       "source_locator": "appdetails.about_the_game",
+       "source_record_id": "src_646570"
+      },
+      {
+       "evidence_id": "ev_646570_strategy",
+       "gene_id": "strategy",
+       "source_type": "genre_mapping",
+       "source_priority": "medium",
+       "trace_status": "verified",
+       "level_support": "supported",
+       "quote_original": "Strategy",
+       "source_locator": "appdetails.genres",
+       "source_record_id": "src_646570"
+      },
+      {
+       "evidence_id": "ev_646570_pace",
+       "gene_id": "pace",
+       "source_type": "genre_mapping",
+       "source_priority": "medium",
+       "trace_status": "verified",
+       "level_support": "supported",
+       "quote_original": "Playable without Timed Input",
+       "source_locator": "appdetails.categories",
+       "source_record_id": "src_646570"
+      },
+      {
+       "evidence_id": "ev_646570_progression",
+       "gene_id": "progression",
+       "source_type": "official_description",
+       "source_priority": "high",
+       "trace_status": "verified",
+       "level_support": "supported",
+       "quote_original": "discover relics of immense power",
+       "source_locator": "appdetails.about_the_game",
+       "source_record_id": "src_646570"
+      },
+      {
+       "evidence_id": "ev_646570_exploration",
+       "gene_id": "exploration",
+       "source_type": "official_description",
+       "source_priority": "high",
+       "trace_status": "verified",
+       "level_support": "supported",
+       "quote_original": "encounter bizarre creatures, discover relics of immense power",
+       "source_locator": "appdetails.about_the_game",
+       "source_record_id": "src_646570"
+      },
+      {
+       "evidence_id": "ev_646570_creation",
+       "gene_id": "creation",
+       "source_type": "official_description",
+       "source_priority": "high",
+       "trace_status": "verified",
+       "level_support": "supported",
+       "quote_original": "the best single player deckbuilder we could",
+       "source_locator": "appdetails.about_the_game",
+       "source_record_id": "src_646570"
+      },
+      {
+       "evidence_id": "ev_646570_social",
+       "gene_id": "social",
+       "source_type": "official_description",
+       "source_priority": "high",
+       "trace_status": "verified",
+       "level_support": "supported",
+       "quote_original": "single player deckbuilder",
+       "source_locator": "appdetails.about_the_game",
+       "source_record_id": "src_646570"
+      }
+     ],
+     "descriptors": [
+      "bizarre creatures",
+      "relics of immense power",
+      "spire"
+     ],
+     "notes": null
+    },
+    "reviews_available": 12
+   }
+  },
+  {
+   "appid": 413150,
+   "name": "Stardew Valley",
+   "genres": [
+    "Indie",
+    "RPG",
+    "Simulation"
+   ],
+   "role": "Simulation桶; 模拟经营类代表; challenge=null是null语义测试用例",
+   "data": {
+    "steam": {
+     "name": "Stardew Valley",
+     "release_date": null,
+     "is_free": false,
+     "price_usd_cents": 1499,
+     "description": "You've inherited your grandfather's old farm plot in Stardew Valley. Armed with hand-me-down tools and a few coins, you set out to begin your new life. Can you learn to live off the land and turn these overgrown fields into a thriving home?",
+     "genres": [
+      "Indie",
+      "RPG",
+      "Simulation"
+     ],
+     "categories": [
+      "Single-player",
+      "Multi-player",
+      "Co-op",
+      "Online Co-op",
+      "LAN Co-op",
+      "Shared/Split Screen Co-op",
+      "Shared/Split Screen",
+      "Steam Achievements",
+      "Full controller support",
+      "Steam Trading Cards",
+      "Steam Cloud",
+      "Remote Play on Phone",
+      "Remote Play on Tablet",
+      "Remote Play Together",
+      "Family Sharing"
+     ]
+    },
+    "gene_annotation": {
+     "genes": {
+      "suggested_levels": {
+       "challenge": null,
+       "strategy": 2,
+       "pace": null,
+       "progression": 3,
+       "exploration": null,
+       "creation": 2,
+       "narrative": 1,
+       "immersion": null,
+       "social": 1
+      }
+     },
+     "evidence": [
+      {
+       "evidence_id": "ev_413150_strategy",
+       "gene_id": "strategy",
+       "source_type": "official_description",
+       "source_priority": "high",
+       "trace_status": "verified",
+       "level_support": "supported",
+       "quote_original": "learn to live off the land",
+       "source_locator": "appdetails.about_the_game",
+       "source_record_id": "src_413150"
+      },
+      {
+       "evidence_id": "ev_413150_progression",
+       "gene_id": "progression",
+       "source_type": "official_description",
+       "source_priority": "high",
+       "trace_status": "verified",
+       "level_support": "supported",
+       "quote_original": "turn these overgrown fields into a thriving home",
+       "source_locator": "appdetails.about_the_game",
+       "source_record_id": "src_413150"
+      },
+      {
+       "evidence_id": "ev_413150_creation",
+       "gene_id": "creation",
+       "source_type": "official_description",
+       "source_priority": "high",
+       "trace_status": "verified",
+       "level_support": "supported",
+       "quote_original": "turn these overgrown fields into a thriving home",
+       "source_locator": "appdetails.about_the_game",
+       "source_record_id": "src_413150"
+      },
+      {
+       "evidence_id": "ev_413150_narrative",
+       "gene_id": "narrative",
+       "source_type": "official_description",
+       "source_priority": "high",
+       "trace_status": "verified",
+       "level_support": "supported",
+       "quote_original": "You've inherited your grandfather's old farm plot in Stardew Valley.",
+       "source_locator": "appdetails.about_the_game",
+       "source_record_id": "src_413150"
+      },
+      {
+       "evidence_id": "ev_413150_social",
+       "gene_id": "social",
+       "source_type": "genre_mapping",
+       "source_priority": "medium",
+       "trace_status": "verified",
+       "level_support": "supported",
+       "quote_original": "Multi-player",
+       "source_locator": "appdetails.categories",
+       "source_record_id": "src_413150"
+      }
+     ],
+     "descriptors": [
+      "farming",
+      "rural life"
+     ],
+     "notes": null
+    },
+    "reviews_available": 13
+   }
+  },
+  {
+   "appid": 1135690,
+   "name": "Unpacking",
+   "genres": [
+    "Casual",
+    "Indie",
+    "Simulation"
+   ],
+   "role": "Casual桶; 描述285字符; progression/exploration双null, 测画像融合对缺失维度的处理",
+   "data": {
+    "steam": {
+     "name": "Unpacking",
+     "release_date": null,
+     "is_free": false,
+     "price_usd_cents": 799,
+     "description": "Unpacking is a zen puzzle game about the familiar experience of pulling possessions out of boxes and fitting them into a new home. Part block-fitting puzzle, part home decoration, you are invited to create a satisfying living space while learning clues about the life you’re unpacking.",
+     "genres": [
+      "Casual",
+      "Indie",
+      "Simulation"
+     ],
+     "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Full controller support",
+      "Steam Trading Cards",
+      "Adjustable Text Size",
+      "Camera Comfort",
+      "Color Alternatives",
+      "Custom Volume Controls",
+      "Adjustable Difficulty",
+      "Mouse Only Option",
+      "Playable without Timed Input",
+      "DualShock Controller Support",
+      "DualShock Controller Support",
+      "DualSense Controller Support",
+      "DualSense Controller Support",
+      "Save Anytime",
+      "Stereo Sound",
+      "Steam Cloud",
+      "Family Sharing"
+     ]
+    },
+    "gene_annotation": {
+     "genes": {
+      "suggested_levels": {
+       "challenge": 2,
+       "strategy": 1,
+       "pace": 1,
+       "progression": null,
+       "exploration": null,
+       "creation": 3,
+       "narrative": 2,
+       "immersion": 2,
+       "social": 0
+      }
+     },
+     "evidence": [
+      {
+       "evidence_id": "ev_1135690_challenge",
+       "gene_id": "challenge",
+       "source_type": "official_description",
+       "source_priority": "high",
+       "trace_status": "verified",
+       "level_support": "supported",
+       "quote_original": "zen puzzle game",
+       "source_locator": "appdetails.about_the_game",
+       "source_record_id": "src_1135690"
+      },
+      {
+       "evidence_id": "ev_1135690_strategy",
+       "gene_id": "strategy",
+       "source_type": "official_description",
+       "source_priority": "high",
+       "trace_status": "verified",
+       "level_support": "supported",
+       "quote_original": "Part block-fitting puzzle, part home decoration",
+       "source_locator": "appdetails.about_the_game",
+       "source_record_id": "src_1135690"
+      },
+      {
+       "evidence_id": "ev_1135690_pace",
+       "gene_id": "pace",
+       "source_type": "official_description",
+       "source_priority": "high",
+       "trace_status": "verified",
+       "level_support": "supported",
+       "quote_original": "zen puzzle game",
+       "source_locator": "appdetails.about_the_game",
+       "source_record_id": "src_1135690"
+      },
+      {
+       "evidence_id": "ev_1135690_creation",
+       "gene_id": "creation",
+       "source_type": "official_description",
+       "source_priority": "high",
+       "trace_status": "verified",
+       "level_support": "supported",
+       "quote_original": "part home decoration, you are invited to create a satisfying living space",
+       "source_locator": "appdetails.about_the_game",
+       "source_record_id": "src_1135690"
+      },
+      {
+       "evidence_id": "ev_1135690_narrative",
+       "gene_id": "narrative",
+       "source_type": "official_description",
+       "source_priority": "high",
+       "trace_status": "verified",
+       "level_support": "supported",
+       "quote_original": "learning clues about the life you're unpacking",
+       "source_locator": "appdetails.about_the_game",
+       "source_record_id": "src_1135690"
+      },
+      {
+       "evidence_id": "ev_1135690_immersion",
+       "gene_id": "immersion",
+       "source_type": "official_description",
+       "source_priority": "high",
+       "trace_status": "verified",
+       "level_support": "supported",
+       "quote_original": "zen puzzle game about the familiar experience",
+       "source_locator": "appdetails.about_the_game",
+       "source_record_id": "src_1135690"
+      },
+      {
+       "evidence_id": "ev_1135690_social",
+       "gene_id": "social",
+       "source_type": "genre_mapping",
+       "source_priority": "medium",
+       "trace_status": "verified",
+       "level_support": "supported",
+       "quote_original": "Single-player",
+       "source_locator": "appdetails.categories",
+       "source_record_id": "src_1135690"
+      }
+     ],
+     "descriptors": [
+      "zen",
+      "home decoration",
+      "unpacking"
+     ],
+     "notes": null
+    },
+    "reviews_available": 13
+   }
+  }
+ ]
+}

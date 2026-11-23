@@ -1,0 +1,18 @@
+{
+  "response": {
+    "game_count": 2,
+    "games": [
+      {
+        "appid": 10,
+        "name": "Example Game",
+        "playtime_forever": 125,
+        "playtime_2weeks": 15
+      },
+      {
+        "appid": 20,
+        "name": "Unplayed Game",
+        "playtime_forever": 0
+      }
+    ]
+  }
+}

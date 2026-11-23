@@ -1,0 +1,3 @@
+Parse the player's current English preference statement into structured adjustments.
+
+Return English JSON that strictly matches the provided schema. Gene adjustments are directional values -1, 0, or 1 and must only represent one of the frozen nine experience dimensions. Theme, art style, viewpoint, controller support, price, language, and release state are not game genes. Put descriptive wishes in soft_descriptor_preferences. Put possible hard conditions only in potential_hard_constraints. Do not activate a hard condition yourself. Preserve unsupported requests separately. Do not infer preferences the player did not state.
