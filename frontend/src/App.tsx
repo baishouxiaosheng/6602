@@ -176,7 +176,7 @@ function App() {
           />
         )}
         {step === 4 && recommendation && (
-          <RecommendationsStep recommendation={recommendation} onRestart={() => window.location.reload()} />
+          <RecommendationsStep recommendation={recommendation} profile={profile} onRestart={() => window.location.reload()} />
         )}
       </div>
 

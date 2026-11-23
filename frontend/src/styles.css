@@ -164,53 +164,60 @@ a { color: var(--blue); }
 .profile-facts dd { margin: 0; }
 .tag-plain { color: var(--text); background: rgba(255, 255, 255, .08); }
 
-/* results: one compact header, then store-style rows. Reading order per row:
-   name -> match -> why -> the evidence itself -> one quiet note. */
-.results-hero { display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap; padding: 2px 0 12px; }
-.results-hero h1 { margin: 0 0 2px; font-size: clamp(1.5rem, 2.4vw, 1.9rem); font-weight: 400; }
-.results-hero p { margin: 0; color: var(--dim); font-size: 14px; }
-.results-actions { display: flex; align-items: center; gap: 10px; }
+/* results. Three reading levels per row:
+   1 the game (capsule, name) and its match score, 2 the gene pips, 3 one quiet line of text.
+   Quotes and IDs stay behind a disclosure. */
+.results-hero { display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap; padding: 2px 0 10px; }
+.results-hero h1 { margin: 0; font-size: clamp(1.5rem, 2.4vw, 1.9rem); font-weight: 400; }
+.results-actions { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
+.pip-legend { display: flex; align-items: center; gap: 8px; color: var(--dim); font-size: 12px; }
 .result-status { padding: 4px 11px; border-radius: 2px; color: var(--ink); font-size: 12.5px; font-weight: 600; background: var(--gold); }
 .result-status.status-failed { color: var(--white); background: var(--red); }
-.track-section { margin-top: 22px; }
-.track-heading { display: flex; align-items: baseline; gap: 14px; margin-bottom: 8px; padding-bottom: 7px; border-bottom: 1px solid rgba(103, 193, 245, .25); }
-.track-heading h2 { margin: 0; font-size: 15px; font-weight: 500; letter-spacing: .12em; text-transform: uppercase; }
-.track-heading p { margin: 0; color: var(--dim); font-size: 13.5px; }
-.track-section.track-cross .track-heading { border-bottom-color: rgba(160, 107, 240, .45); }
-.track-section.track-cross .track-heading h2 { color: #c9aef7; }
+.results-note { margin: 0 0 4px; color: var(--dim); font-size: 13px; }
+.track-section { margin-top: 20px; }
+.track-heading { display: flex; align-items: baseline; gap: 12px; margin-bottom: 8px; }
+.track-heading h2 { margin: 0; padding: 3px 10px; border-radius: 2px; color: var(--ink); font-size: 12.5px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; background: var(--blue); }
+.track-section.track-cross .track-heading h2 { color: var(--white); background: #7b4fd0; }
+.track-heading p { margin: 0; color: var(--dim); font-size: 13px; }
 .recommendation-list { display: grid; gap: 6px; }
-.recommendation-card { display: grid; grid-template-columns: minmax(220px, 292px) 1fr; overflow: hidden; border-radius: 2px; background: rgba(0, 0, 0, .22); transition: background .15s; }
+.recommendation-card { display: grid; grid-template-columns: 292px minmax(0, 1fr) auto; align-items: stretch; overflow: hidden; border-radius: 2px; background: rgba(0, 0, 0, .22); transition: background .15s; }
 .recommendation-card:hover { background: linear-gradient(90deg, rgba(103, 193, 245, .2) 0%, rgba(0, 0, 0, .22) 80%); }
 .capsule { position: relative; display: block; min-height: 136px; background: linear-gradient(135deg, #2f5674, var(--bg)); }
 .capsule-name { position: absolute; inset: 0; display: grid; place-items: center; padding: 0 14px; color: rgba(255, 255, 255, .75); font-size: 17px; font-weight: 600; text-align: center; }
 .capsule-image { position: absolute; inset: 0; background: center / cover no-repeat; }
 .recommendation-rank { position: absolute; left: 0; top: 0; padding: 2px 9px; color: var(--white); font-size: 13px; font-weight: 600; background: rgba(0, 0, 0, .7); }
-.recommendation-content { display: flex; flex-direction: column; gap: 9px; min-width: 0; padding: 12px 16px 12px 18px; }
-.recommendation-title { display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; }
-.recommendation-title h3 { margin: 0 0 5px; font-size: 19px; font-weight: 400; line-height: 1.25; }
-.game-meta { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin: 0; font-size: 12.5px; }
-.price { padding: 2px 8px; border-radius: 2px; color: #beee11; background: var(--green-bg); }
-.store-link { margin-left: 4px; color: var(--dim); text-decoration: none; }
-.store-link:hover { color: var(--white); }
-.compatibility { flex: none; display: grid; justify-items: center; min-width: 76px; padding: 4px 10px 5px; border-radius: 2px; background: #2a5d84; }
+.recommendation-content { display: flex; flex-direction: column; justify-content: center; gap: 6px; min-width: 0; padding: 12px 18px; }
+.recommendation-content h3 { margin: 0; font-size: 21px; font-weight: 500; line-height: 1.2; }
+.game-meta { display: flex; flex-wrap: wrap; align-items: center; gap: 0 8px; margin: 0; color: var(--dim); font-size: 12.5px; }
+.game-meta span + span::before { content: "·"; margin-right: 8px; color: #4f6377; }
+.game-meta .price { color: #beee11; }
+.ranking-reason { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden; margin: 2px 0 0; color: var(--text); font-size: 14px; line-height: 1.5; }
+.caution { display: flex; align-items: baseline; gap: 7px; margin: 0; color: #a8946a; font-size: 12.5px; }
+.caution span { flex: none; display: grid; place-items: center; width: 14px; height: 14px; border-radius: 2px; color: var(--ink); font-size: 10.5px; font-weight: 700; background: #a8946a; }
+.evidence-details { color: #6f8296; font-size: 12.5px; }
+.evidence-details summary { cursor: pointer; width: fit-content; }
+.evidence-details summary:hover { color: var(--blue); }
+.evidence-details ul { display: grid; gap: 4px; margin: 6px 0 2px; padding: 0; list-style: none; }
+.evidence-details li { display: flex; flex-wrap: wrap; align-items: baseline; gap: 8px; }
+.evidence-details q { color: #a9bccd; font-size: 13px; quotes: "“" "”"; }
+.evidence-details code { padding: 0 6px; border-radius: 2px; color: #5f7183; font-size: 11px; background: rgba(0, 0, 0, .3); }
+.recommendation-side { display: flex; align-items: center; gap: 18px; padding: 12px 16px 12px 8px; }
+.compatibility { order: 2; display: grid; justify-items: center; align-content: center; width: 104px; height: 88px; border-radius: 2px; background: #2a5d84; }
 .compatibility.high { background: var(--green-bg); }
 .compatibility.low { background: #4f4a3a; }
-.compatibility strong { color: #c9e8fc; font-size: 25px; font-weight: 500; line-height: 1.15; font-variant-numeric: tabular-nums; }
+.compatibility strong { color: #c9e8fc; font-size: 34px; font-weight: 500; line-height: 1.05; font-variant-numeric: tabular-nums; }
 .compatibility.high strong { color: #beee11; }
 .compatibility.low strong { color: #e8c57c; }
-.compatibility span { color: rgba(255, 255, 255, .8); font-size: 10.5px; letter-spacing: .1em; text-transform: uppercase; }
-.ranking-reason { margin: 0; color: #e3edf5; font-size: 15px; line-height: 1.55; }
-.evidence-list { display: grid; gap: 1px; margin: 0; padding: 0; list-style: none; }
-.evidence-list li { display: grid; grid-template-columns: 132px 1fr; align-items: baseline; gap: 12px; padding: 5px 10px; background: rgba(0, 0, 0, .22); font-size: 13.5px; }
-.evidence-gene { display: flex; justify-content: space-between; gap: 8px; color: #d2efa9; }
-.evidence-gene b { color: var(--dim); font-weight: 400; font-variant-numeric: tabular-nums; }
-.evidence-list q { color: #a9bccd; quotes: "“" "”"; }
-.caution { display: flex; align-items: baseline; gap: 8px; margin: 0; color: #c9a96a; font-size: 13px; }
-.caution span { flex: none; display: grid; place-items: center; width: 15px; height: 15px; border-radius: 2px; color: var(--ink); font-size: 11px; font-weight: 700; background: #c9a96a; }
-.recommendation-card details { color: #5f7183; font-size: 12px; }
-.recommendation-card summary { cursor: pointer; width: fit-content; }
-.recommendation-card details ul { display: flex; flex-wrap: wrap; gap: 6px; margin: 6px 0 0; padding: 0; list-style: none; }
-.recommendation-card code { padding: 1px 7px; border-radius: 2px; color: var(--dim); font-size: 12px; background: rgba(0, 0, 0, .35); }
+.compatibility span { color: rgba(255, 255, 255, .75); font-size: 10.5px; letter-spacing: .14em; text-transform: uppercase; }
+.gene-tiles { display: grid; gap: 7px; margin: 0; padding: 0; list-style: none; }
+.gene-tiles li { display: grid; grid-template-columns: 96px auto; align-items: center; gap: 10px; }
+.gene-tile-name { color: var(--text); font-size: 12px; letter-spacing: .08em; text-transform: uppercase; text-align: right; }
+.pips { display: inline-flex; gap: 3px; }
+.pips i { width: 18px; height: 9px; border-radius: 1px; background: rgba(0, 0, 0, .45); }
+.pips i.on { background: var(--green); }
+.pips i.you { outline: 2px solid var(--white); outline-offset: 1px; }
+.pip-legend .pips i { width: 11px; height: 7px; }
+.pip-legend .pips i.you { outline-width: 1.5px; }
 
 footer { display: flex; justify-content: space-between; width: min(1180px, calc(100% - 48px)); margin: 0 auto; padding: 18px 0 28px; border-top: 1px solid var(--line); color: var(--dim); font-size: 12.5px; }
 .splash { min-height: 100vh; display: grid; place-items: center; align-content: center; gap: 14px; padding: 24px; color: var(--dim); background: radial-gradient(circle at center, #2a475e, var(--bg) 60%); }
@@ -225,8 +232,21 @@ footer { display: flex; justify-content: space-between; width: min(1180px, calc(
   .summary-columns { grid-template-columns: 1fr 1fr; }
 }
 
+@media (max-width: 1020px) {
+  .recommendation-card { grid-template-columns: 220px minmax(0, 1fr); }
+  .recommendation-side { grid-column: 1 / -1; justify-content: space-between; padding: 0 16px 12px 16px; }
+  .gene-tiles { grid-auto-flow: column; gap: 14px; }
+  .gene-tiles li { grid-template-columns: auto; justify-items: start; gap: 4px; }
+  .gene-tile-name { text-align: left; }
+  .compatibility { width: 88px; height: 64px; }
+  .compatibility strong { font-size: 26px; }
+}
+
 @media (max-width: 760px) {
   .recommendation-card { grid-template-columns: 1fr; }
+  .gene-tiles { grid-auto-flow: row; }
+  .gene-tiles li { grid-template-columns: 96px auto; }
+  .pip-legend { display: none; }
   .step-indicator li { justify-content: center; padding: 9px 6px; }
   .step-indicator small { display: none; }
 }

@@ -1,10 +1,13 @@
 import { useEffect, useState } from "react";
 
 import { getCatalogGame } from "../api/client";
-import type { CatalogGame, GeneId, RecommendationItem, RecommendationRun } from "../api/types";
+import type { CatalogGame, GeneId, PlayerProfile, RecommendationItem, RecommendationRun } from "../api/types";
+
+type Targets = Partial<Record<GeneId, number>>;
 
 interface RecommendationsStepProps {
   recommendation: RecommendationRun;
+  profile?: PlayerProfile | null;
   onRestart: () => void;
 }
 
@@ -35,26 +38,44 @@ function useCatalogGames(appids: number[]) {
   return games;
 }
 
-function EvidenceList({ item, game }: { item: RecommendationItem; game?: CatalogGame }) {
-  const cited = new Set(item.evidence_ids);
-  const rows = item.matched_gene_ids.map((geneId: GeneId) => {
-    const gene = game?.genes.find((candidate) => candidate.gene_id === geneId);
-    const evidence = gene?.evidence.find((entry) => cited.has(entry.evidence_id)) ?? gene?.evidence[0];
-    return { geneId, level: gene?.level ?? null, quote: evidence?.quote_original ?? null };
-  });
+const LEVELS = [1, 2, 3, 4];
+
+/** One tile per matched gene: the game's level as filled pips, the player's target as a marker. */
+function GeneTiles({ item, game, targets }: { item: RecommendationItem; game?: CatalogGame; targets: Targets }) {
   return (
-    <ul className="evidence-list">
-      {rows.map((row) => (
-        <li key={row.geneId}>
-          <span className="evidence-gene">{titleCase(row.geneId)}{row.level !== null && <b>{row.level}/4</b>}</span>
-          {row.quote ? <q>{row.quote}</q> : <span className="muted">Evidence stored for this gene</span>}
-        </li>
-      ))}
+    <ul className="gene-tiles">
+      {item.matched_gene_ids.map((geneId: GeneId) => {
+        const level = game?.genes.find((candidate) => candidate.gene_id === geneId)?.level ?? null;
+        const target = targets[geneId];
+        return (
+          <li key={geneId} title={target === undefined ? undefined : `You want ${target} of 4`}>
+            <span className="gene-tile-name">{titleCase(geneId)}</span>
+            <span className="pips" aria-label={level === null ? "evidence stored" : `game level ${level} of 4`}>
+              {LEVELS.map((step) => <i key={step} className={`${level !== null && step <= level ? "on" : ""}${target !== undefined && step === Math.round(target) ? " you" : ""}`} />)}
+            </span>
+          </li>
+        );
+      })}
     </ul>
   );
 }
 
-function RecommendationCard({ item, game }: { item: RecommendationItem; game?: CatalogGame }) {
+function EvidenceDetails({ item, game }: { item: RecommendationItem; game?: CatalogGame }) {
+  const quotes = new Map<string, string>();
+  for (const gene of game?.genes ?? []) for (const entry of gene.evidence) quotes.set(entry.evidence_id, entry.quote_original);
+  return (
+    <details className="evidence-details">
+      <summary>Evidence ({item.evidence_ids.length})</summary>
+      <ul>
+        {item.evidence_ids.map((evidence) => (
+          <li key={evidence}>{quotes.has(evidence) && <q>{quotes.get(evidence)}</q>}<code>{evidence}</code></li>
+        ))}
+      </ul>
+    </details>
+  );
+}
+
+function RecommendationCard({ item, game, targets }: { item: RecommendationItem; game?: CatalogGame; targets: Targets }) {
   const percent = Math.round(item.compatibility_score * 100);
   const level = percent >= 82 ? "high" : percent >= 72 ? "mid" : "low";
   const storeUrl = `https://store.steampowered.com/app/${item.appid}/`;
@@ -68,50 +89,49 @@ function RecommendationCard({ item, game }: { item: RecommendationItem; game?: C
         <span className="recommendation-rank" title="Order chosen by the AI ranker">#{item.ai_rank}</span>
       </a>
       <div className="recommendation-content">
-        <div className="recommendation-title">
-          <div>
-            <h3>{item.name}</h3>
-            <p className="game-meta">
-              {game?.genres.map((genre) => <span className="tag" key={genre}>{titleCase(genre)}</span>)}
-              {price && <span className="price">{price}</span>}
-              <a className="store-link" href={storeUrl} target="_blank" rel="noopener noreferrer">View on Steam ↗</a>
-            </p>
-          </div>
-          <div className={`compatibility ${level}`}><strong>{percent}%</strong><span>match</span></div>
-        </div>
+        <h3>{item.name}</h3>
+        <p className="game-meta">
+          {game?.genres.map((genre) => <span key={genre}>{titleCase(genre)}</span>)}
+          {price && <span className="price">{price}</span>}
+        </p>
         <p className="ranking-reason">{item.ranking_reason}</p>
-        <EvidenceList item={item} game={game} />
         {item.caution && <p className="caution"><span aria-hidden="true">!</span>{item.caution}</p>}
-        <details><summary>Evidence IDs</summary><ul>{item.evidence_ids.map((evidence) => <li key={evidence}><code>{evidence}</code></li>)}</ul></details>
+        <EvidenceDetails item={item} game={game} />
+      </div>
+      <div className="recommendation-side">
+        <div className={`compatibility ${level}`}><strong>{percent}%</strong><span>match</span></div>
+        <GeneTiles item={item} game={game} targets={targets} />
       </div>
     </article>
   );
 }
 
-function TrackSection({ title, subtitle, items, kind, games }: { title: string; subtitle: string; items: RecommendationItem[]; kind: "same" | "cross"; games: Record<number, CatalogGame> }) {
+function TrackSection({ title, subtitle, items, kind, games, targets }: { title: string; subtitle: string; items: RecommendationItem[]; kind: "same" | "cross"; games: Record<number, CatalogGame>; targets: Targets }) {
   return (
     <section className={`track-section track-${kind}`}>
       <div className="track-heading"><h2>{title}</h2><p>{subtitle}</p></div>
-      {items.length ? <div className="recommendation-list">{items.map((item) => <RecommendationCard item={item} game={games[item.appid]} key={item.appid} />)}</div> : <div className="empty-state compact"><h3>No eligible match in this track</h3><p>Evidence or compatibility thresholds were not lowered to fill the list.</p></div>}
+      {items.length ? <div className="recommendation-list">{items.map((item) => <RecommendationCard item={item} game={games[item.appid]} targets={targets} key={item.appid} />)}</div> : <div className="empty-state compact"><h3>No eligible match in this track</h3><p>Evidence or compatibility thresholds were not lowered to fill the list.</p></div>}
     </section>
   );
 }
 
-export function RecommendationsStep({ recommendation, onRestart }: RecommendationsStepProps) {
+export function RecommendationsStep({ recommendation, profile, onRestart }: RecommendationsStepProps) {
   const all = [...recommendation.same_track, ...recommendation.cross_track];
   const games = useCatalogGames(all.map((item) => item.appid));
+  const targets: Targets = Object.fromEntries((profile?.gene_contributions ?? []).map((gene) => [gene.gene_id, gene.final_target]));
   return (
     <section className="results-panel" aria-labelledby="recommendations-title">
       <div className="results-hero">
-        <div><h1 id="recommendations-title">Your recommendations</h1><p>Scores come from verified game genes. The AI only orders the shortlisted games.</p></div>
+        <h1 id="recommendations-title">Your recommendations</h1>
         <div className="results-actions">
+          <span className="pip-legend"><span className="pips"><i className="on" /><i className="on" /><i className="on you" /><i /></span>game level · outline = your target</span>
           {recommendation.status !== "ok" && <span className={`result-status status-${recommendation.status}`}>{titleCase(recommendation.status)}</span>}
           <button className="button button-ghost" onClick={onRestart}>Start a new profile</button>
         </div>
       </div>
-      {recommendation.message && <div className="notice notice-info">{recommendation.message}</div>}
-      <TrackSection title="Familiar territory" subtitle="Close to the genres you already play" items={recommendation.same_track} kind="same" games={games} />
-      <TrackSection title="Cross-genre discoveries" subtitle="A different genre with a matching gene pattern" items={recommendation.cross_track} kind="cross" games={games} />
+      {recommendation.message && <p className="results-note">{recommendation.message}</p>}
+      <TrackSection title="Familiar territory" subtitle="Genres you already play" items={recommendation.same_track} kind="same" games={games} targets={targets} />
+      <TrackSection title="Cross-genre discoveries" subtitle="New genre, matching genes" items={recommendation.cross_track} kind="cross" games={games} targets={targets} />
     </section>
   );
 }
