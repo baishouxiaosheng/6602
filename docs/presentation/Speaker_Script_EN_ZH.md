@@ -25,9 +25,9 @@ Final presentation, 27 November 2026 · PANG Junqing, LIU Tengxuan, GUO Yuchen, 
 
 ## Slide 3 · Expected outcomes（约 55 秒）
 
-**EN** What does the system deliver? Two tracks: familiar territory, and cross-genre discoveries with a compatible gene pattern. And we can measure it. Twenty-nine of thirty catalogue games are verified; the thirtieth stays partial because we do not guess. One hundred seventy-two evidence quotes are stored, one for every known gene level. In our live run with a real Steam library of forty-eight games, none of the owned games was recommended. Sixty-four automated tests pass. The card on the right is from that live run: Hollow Knight, a different genre, matched on three genes, each shown with the quote that supports it, and its weak point stated. Notice the run returned one game per track. The system leaves slots empty rather than lowering its thresholds.
+**EN** What does the system deliver? Two tracks: familiar territory, and cross-genre discoveries with a compatible gene pattern. And we can measure it. Twenty-nine of thirty catalogue games are verified; the thirtieth stays partial because we do not guess. One hundred seventy-two evidence quotes are stored, one for every known gene level. In our live run with a real Steam library of forty-eight games, none of the owned games was recommended. Sixty-four automated tests pass. The card on the right is from that live run: Hollow Knight, a different genre, matched on three genes. The green pips are the game’s level and the outline is the player’s target; the supporting quotes open on demand, and its weak point is stated. Notice the run returned one game per track. The system leaves slots empty rather than lowering its thresholds.
 
-**中** 系统交付什么？两条推荐轨道：熟悉的类型，以及基因模式相容的跨类型发现。而且这些都可以度量。目录 30 款游戏中 29 款通过核验，第 30 款保持“部分”状态，因为我们不猜测。系统保存了 172 条证据原句，每个已知的基因等级都有一条。在使用真实 Steam 游戏库（48 款游戏）的实测中，没有任何一款已拥有的游戏被推荐。64 个自动化测试全部通过。右侧的卡片就来自那次实测：Hollow Knight 属于不同类型，在三个基因上匹配，每一项都显示了支持它的原句，同时注明了它的弱点。请注意那次运行每条轨道只返回了一款游戏：系统宁可留空，也不降低门槛。
+**中** 系统交付什么？两条推荐轨道：熟悉的类型，以及基因模式相容的跨类型发现。而且这些都可以度量。目录 30 款游戏中 29 款通过核验，第 30 款保持“部分”状态，因为我们不猜测。系统保存了 172 条证据原句，每个已知的基因等级都有一条。在使用真实 Steam 游戏库（48 款游戏）的实测中，没有任何一款已拥有的游戏被推荐。64 个自动化测试全部通过。右侧的卡片就来自那次实测：Hollow Knight 属于不同类型，在三个基因上匹配。绿色色块是游戏的等级，白色描边是玩家的目标值；支持它的原句可以点开查看，同时注明了它的弱点。请注意那次运行每条轨道只返回了一款游戏：系统宁可留空，也不降低门槛。
 
 ---
 
