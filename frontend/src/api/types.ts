@@ -156,3 +156,25 @@ export interface RecommendationRun {
   message: string | null;
   created_at: string;
 }
+
+export interface CatalogEvidence {
+  evidence_id: string;
+  gene_id: GeneId;
+  source_type: string;
+  quote_original: string;
+}
+
+export interface CatalogGene {
+  gene_id: GeneId;
+  level: number | null;
+  evidence: CatalogEvidence[];
+}
+
+export interface CatalogGame {
+  appid: number;
+  name: string;
+  genres: string[];
+  price_usd_cents: number | null;
+  is_free: boolean;
+  genes: CatalogGene[];
+}

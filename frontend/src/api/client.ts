@@ -1,5 +1,6 @@
 import type {
   ApiError,
+  CatalogGame,
   HealthResponse,
   Job,
   PlayerProfile,
@@ -165,4 +166,9 @@ export async function getRecommendation(runId: string): Promise<RecommendationRu
     `/api/recommendations/${runId}`,
   );
   return result.recommendation;
+}
+
+export async function getCatalogGame(appid: number, signal?: AbortSignal): Promise<CatalogGame> {
+  const result = await request<{ game: CatalogGame }>(`/api/catalog/games/${appid}`, { signal });
+  return result.game;
 }
